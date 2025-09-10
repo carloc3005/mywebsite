@@ -1,29 +1,47 @@
 "use client";
 
 import Image from 'next/image';
-import { Mail, Linkedin, Github, Download, ArrowUpRight } from 'lucide-react';
+import { Mail, Linkedin, Github, Download, ArrowUpRight, Phone, MapPin, Code, Briefcase, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function PortfolioPage() {
   const projects = [
     {
-      name: 'MediLink',
-      description: 'Built a HIPAA and GDPR compliant healthcare web app that lets patients securely save and share their records.',
-      tech: ['React', 'TailwindCSS', 'Supabase', 'Node.js'],
-      href: '#', 
+      name: 'Spotify',
+      description: 'A feature-rich music streaming application built with Next.js where users can build a personal library of their favorite songs. The platform delivers an engaging playback experience with a real-time sound wave visualizer and a high-fidelity interface modeled after Spotify.',
+      tech: ['Next.js', 'TailwindCSS', 'Neon Postgre', 'Node.js', 'Stripe'],
+      href: '#',
+      category: 'Full-Stack'
     },
     {
       name: 'KnifeX',
-      description: 'Developed a CS:GO skin-trading platform where users can browse, list, and securely trade virtual knife skins.',
-      tech: ['React', 'Node.js', 'Express'],
-      href: '#', 
+      description: 'Developed a CS:GO skin-trading platform where users can browse, list, and securely trade virtual knife skins. Delivered a responsive interface and robust REST-style APIs for real-time user flow and trade execution while overcoming state management and plugin-handling challenges.',
+      tech: ['React', 'Node.js', 'Express', 'Neon Postgre'],
+      href: '#',
+      category: 'Full-Stack'
     },
     {
-      name: 'Tapioca Express',
-      description: 'Developed an online ordering site for a local boba shop that showcases the full menu and lets customers place orders.',
-      tech: ['React', 'MongoDB', 'JavaScript'],
-      href: '#', 
+      name: 'Hello Po',
+      description: 'An AI-enhanced video conferencing platform with its core video and chat software powered by GetStream.io. The application connects users in a real-time call with OpenAI\'s generative AI for a live conversation. Upon completion, an Inngrest-managed pipeline automatically generates a concise summary of the discussion.',
+      tech: ['Next.js', 'TailwindCSS', 'Inngest', 'Javascript', 'Neon Postgre', 'GetStream.io'],
+      href: '#',
+      category: 'AI/Video'
     },
+  ];
+
+  const workExperience = [
+    {
+      company: 'Chipotle Mexican Grill',
+      role: 'Crew Member',
+      period: 'November 2023 - Current',
+      description: 'Processing 300+ customer orders per shift in a COS with 98% accuracy and top-quartile customer satisfaction.'
+    },
+    {
+      company: 'Applied Medical',
+      role: 'Production Associate',
+      period: 'September 2017 - August 2023',
+      description: 'Assisted team leads in organizing and distributing materials to optimize workflow efficiency. Managed all record paperwork in accordance with Standard Operating Procedures (SOP) and SAP system to ensure accurate documentation and compliance.'
+    }
   ];
 
   const fadeIn = {
@@ -31,140 +49,470 @@ export default function PortfolioPage() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
+  const staggerChildren = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const slideUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <div className="bg-white text-gray-800 min-h-screen">
-      <header className="sticky top-0 z-50 bg-white/75 backdrop-blur-lg border-b border-gray-200">
+    <div className="bg-gradient-to-br from-slate-50 via-white to-violet-50 text-gray-800 min-h-screen">
+      {/* Enhanced Header */}
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200/50 shadow-sm">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-900">Carlo Castillo</h1>
-          <nav className="flex items-center space-x-4">
-            <a href="https://www.linkedin.com/in/carlo-castillo-59827a354/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-violet-600 transition-colors">
-              <Linkedin size={22} />
-            </a>
-            <a href="https://github.com/carloc3005" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-violet-600 transition-colors">
-              <Github size={22} />
-            </a>
-            <a
-              href="/Gray and Black Proffessional CV Resume-1.pdf"
-              download
-              className="hidden sm:inline-flex bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2 px-4 rounded-lg items-center space-x-2 transition-colors transform hover:scale-105"
-            >
-              <Download size={18} />
-              <span>Resume</span>
-            </a>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+              Carlo Castillo
+            </h1>
+            <p className="text-sm text-gray-500 font-medium">IT Support Specialist</p>
+          </motion.div>
+          
+          <nav className="flex items-center space-x-6">
+            <div className="hidden md:flex items-center space-x-6 text-sm">
+              <a href="#about" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">About</a>
+              <a href="#projects" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">Projects</a>
+              <a href="#experience" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">Experience</a>
+            </div>
+            <div className="flex items-center space-x-3">
+              <a href="https://www.linkedin.com/in/carlo-castillo-59827a354/" target="_blank" rel="noopener noreferrer" 
+                 className="text-gray-500 hover:text-violet-600 transition-colors p-2 rounded-lg hover:bg-violet-50">
+                <Linkedin size={20} />
+              </a>
+              <a href="https://github.com/carloc3005" target="_blank" rel="noopener noreferrer" 
+                 className="text-gray-500 hover:text-violet-600 transition-colors p-2 rounded-lg hover:bg-violet-50">
+                <Github size={20} />
+              </a>
+              <a
+                href="/Gray and Black Proffessional CV Resume-1.pdf"
+                download
+                className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-semibold py-2.5 px-4 rounded-lg flex items-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-violet-500/25"
+              >
+                <Download size={16} />
+                <span className="hidden sm:inline">Resume</span>
+              </a>
+            </div>
           </nav>
         </div>
       </header>
 
-      <main className="container mx-auto px-6 py-16 sm:py-24">
+      <main className="container mx-auto px-6">
+        {/* Hero Section */}
         <motion.section
           initial="hidden"
           animate="visible"
-          variants={fadeIn}
-          className="grid md:grid-cols-5 gap-12 items-center"
+          variants={staggerChildren}
+          className="py-20 md:py-32"
         >
-          <div className="md:col-span-3 space-y-4">
-            <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-              Full-Stack Developer Passionate About Building Digital Experiences.
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600">
-              I create clean, responsive interfaces and connect them to secure, scalable backends. Currently seeking opportunities to contribute to a dynamic, collaborative team.
-            </p>
-            <div className="flex space-x-4 pt-4">
-              <a href="mailto:carlofc95@gmail.com" className="bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-6 rounded-lg flex items-center space-x-2 transition-colors">
-                <Mail size={20} />
-                <span>Contact Me</span>
-              </a>
-              <a href="#projects" className="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg flex items-center space-x-2 transition-colors">
-                <span>View Projects</span>
-              </a>
-            </div>
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            <motion.div variants={slideUp} className="lg:col-span-7 space-y-8">
+              <div className="space-y-4">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="inline-flex items-center px-4 py-2 bg-violet-100 rounded-full text-violet-700 font-medium text-sm"
+                >
+                  <Code className="w-4 h-4 mr-2" />
+                  Available for new opportunities
+                </motion.div>
+                
+                <h2 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
+                  Full-Stack
+                  <span className="block bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+                    Developer
+                  </span>
+                </h2>
+                
+                <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
+                  Computer Science graduate passionate about solving technical problems and 
+                  supporting users in modern technology environments. Building digital experiences 
+                  with clean code and intuitive design.
+                </p>
+              </div>
+
+              {/* Contact Info */}
+              <div className="flex flex-wrap gap-6 text-gray-600">
+                <div className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4 text-violet-600" />
+                  <span>949-870-0448</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4 text-violet-600" />
+                  <span>carlofc95@gmail.com</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <MapPin className="w-4 h-4 text-violet-600" />
+                  <span>Rancho Santa Margarita, CA 92688</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <a href="mailto:carlofc95@gmail.com" 
+                   className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-violet-500/25">
+                  <Mail size={20} />
+                  <span>Contact Me</span>
+                </a>
+                <a href="#projects" 
+                   className="bg-white border-2 border-gray-200 hover:border-violet-300 text-gray-800 font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all hover:shadow-lg">
+                  <span>View Projects</span>
+                  <ArrowUpRight size={20} />
+                </a>
+              </div>
+            </motion.div>
+            
+            <motion.div
+              variants={slideUp}
+              className="lg:col-span-5 relative"
+            >
+              <div className="relative w-full max-w-md mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-r from-violet-400 to-indigo-400 rounded-3xl blur-3xl opacity-30 animate-pulse"></div>
+                <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
+                  <div className="text-center space-y-4">
+                    <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-violet-100">
+                      <Image
+                        src="/profile-pic1.jpg"
+                        alt="Carlo Castillo"
+                        width={128}
+                        height={128}
+                        className="object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900">Carlo Castillo</h3>
+                      <p className="text-violet-600 font-medium">IT Support Specialist</p>
+                    </div>
+                    <div className="flex justify-center space-x-4 pt-4">
+                      <div className="text-center">
+                        <div className="text-2xl font-bold text-gray-900">3+</div>
+                        <div className="text-sm text-gray-500">Projects</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-2xl font-bold text-gray-900">2025</div>
+                        <div className="text-sm text-gray-500">Graduate</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
-          <motion.div
-            className="md:col-span-2 relative w-full h-80 rounded-lg overflow-hidden"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <Image
-              src="/your-main-photo.jpg"
-              alt="Carlo Castillo"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg shadow-xl shadow-gray-600/10"
-            />
-          </motion.div>
         </motion.section>
 
+        {/* About & Education Section */}
         <motion.section
           id="about"
-          className="mt-32"
+          className="py-24"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={staggerChildren}
+        >
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <motion.div variants={slideUp} className="space-y-8">
+              <div className="space-y-6">
+                <h3 className="text-4xl font-bold text-gray-900">About Me</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  A Computer Science graduate passionate about solving technical problems and 
+                  supporting users in modern technology environments. My background in software 
+                  development provides a deep understanding of application and infrastructure 
+                  issues, enabling me to troubleshoot effectively.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  I am seeking an IT support role where I can leverage my skills to ensure system 
+                  reliability and provide exceptional user assistance. With professional experience 
+                  at Chipotle and Applied Medical, I've developed strong teamwork and procedural skills.
+                </p>
+              </div>
+
+              {/* Technical Skills */}
+              <div className="space-y-4">
+                <h4 className="text-xl font-semibold text-gray-900">Technical Skills</h4>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <h5 className="font-medium text-gray-700 mb-2">Languages:</h5>
+                    <p className="text-gray-600 text-sm">JavaScript, Python</p>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-gray-700 mb-2">Web:</h5>
+                    <p className="text-gray-600 text-sm">HTML, CSS, React, Node.js</p>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-gray-700 mb-2">Tools:</h5>
+                    <p className="text-gray-600 text-sm">Git, VS Code, MySQL, MongoDB, Firebase</p>
+                  </div>
+                  <div>
+                    <h5 className="font-medium text-gray-700 mb-2">Others:</h5>
+                    <p className="text-gray-600 text-sm">Problem-solving, Debugging, Agile/Scrum basics</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div variants={slideUp} className="space-y-8">
+              {/* Education */}
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                <div className="flex items-center space-x-3 mb-6">
+                  <div className="p-3 bg-violet-100 rounded-lg">
+                    <GraduationCap className="w-6 h-6 text-violet-600" />
+                  </div>
+                  <h4 className="text-2xl font-bold text-gray-900">Education</h4>
+                </div>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h5 className="text-lg font-semibold text-gray-900">Bachelor in Computer Science</h5>
+                    <p className="text-violet-600 font-medium">California State University, Fullerton</p>
+                    <p className="text-gray-500">2019-2025</p>
+                  </div>
+                  
+                  <div>
+                    <h5 className="text-lg font-semibold text-gray-900">CSU General Education - Breadth</h5>
+                    <p className="text-violet-600 font-medium">Saddleback College & Irvine Valley College</p>
+                    <p className="text-gray-500">2013-2022</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Certifications */}
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                <h4 className="text-xl font-bold text-gray-900 mb-6">Online Courses & Certificates</h4>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-violet-200 pl-4">
+                    <h5 className="font-semibold text-gray-900">Full-Stack Web Development</h5>
+                    <p className="text-gray-600 text-sm">Udemy</p>
+                  </div>
+                  <div className="border-l-4 border-violet-200 pl-4">
+                    <h5 className="font-semibold text-gray-900">Python Programming</h5>
+                    <p className="text-gray-600 text-sm">Udemy</p>
+                  </div>
+                  <div className="border-l-4 border-violet-200 pl-4">
+                    <h5 className="font-semibold text-gray-900">C++ Programming</h5>
+                    <p className="text-gray-600 text-sm">Udemy</p>
+                  </div>
+                  <div className="border-l-4 border-violet-200 pl-4">
+                    <h5 className="font-semibold text-gray-900">JavaScript Full Course</h5>
+                    <p className="text-gray-600 text-sm">Supersimpledev</p>
+                  </div>
+                  <div className="border-l-4 border-violet-200 pl-4">
+                    <h5 className="font-semibold text-gray-900">Cloud Practitioner - In Progress</h5>
+                    <p className="text-gray-600 text-sm">AWS (Exam Schedule September 2025)</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.section>
+
+        {/* Projects Section */}
+        <motion.section
+          id="projects"
+          className="py-24"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={staggerChildren}
+        >
+          <motion.div variants={slideUp} className="text-center mb-16">
+            <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Featured Projects</h3>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Here are some of the projects I've built that showcase my skills in full-stack development, 
+              AI integration, and modern web technologies.
+            </p>
+          </motion.div>
+          
+          <div className="grid lg:grid-cols-3 gap-8">
+            {projects.map((project, i) => (
+              <motion.div
+                key={project.name}
+                variants={slideUp}
+                custom={i}
+                className="group bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+              >
+                <div className="p-8">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1">
+                      <div className="flex items-center space-x-2 mb-2">
+                        <h4 className="text-2xl font-bold text-gray-900">{project.name}</h4>
+                        <span className="px-2 py-1 bg-violet-100 text-violet-700 text-xs font-medium rounded-full">
+                          {project.category}
+                        </span>
+                      </div>
+                    </div>
+                    <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-violet-600 transition-colors transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                  </div>
+                  
+                  <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+                    {project.description}
+                  </p>
+                  
+                  <div className="space-y-4">
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map(tech => (
+                        <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full hover:bg-violet-100 hover:text-violet-700 transition-colors">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    
+                    <a
+                      href={project.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-violet-600 hover:text-violet-700 font-semibold text-sm transition-colors group"
+                    >
+                      <span>View Project</span>
+                      <ArrowUpRight className="ml-1 w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="h-1 bg-gradient-to-r from-violet-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+        {/* Work Experience Section */}
+        <motion.section
+          id="experience"
+          className="py-24"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={staggerChildren}
+        >
+          <motion.div variants={slideUp} className="text-center mb-16">
+            <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Work Experience</h3>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Professional experience that has shaped my work ethic and team collaboration skills.
+            </p>
+          </motion.div>
+
+          <div className="max-w-4xl mx-auto space-y-8">
+            {workExperience.map((job, i) => (
+              <motion.div
+                key={job.company}
+                variants={slideUp}
+                className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+              >
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-center space-x-4 mb-4 md:mb-0">
+                    <div className="p-3 bg-violet-100 rounded-lg">
+                      <Briefcase className="w-6 h-6 text-violet-600" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900">{job.role}</h4>
+                      <p className="text-lg text-violet-600 font-semibold">{job.company}</p>
+                    </div>
+                  </div>
+                  <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+                    {job.period}
+                  </span>
+                </div>
+                <p className="text-gray-600 leading-relaxed">{job.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* Call to Action Section */}
+        <motion.section
+          className="py-24"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeIn}
         >
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div className="space-y-6">
-               <h3 className="text-3xl font-bold text-gray-900">About Me</h3>
-               <p className="text-gray-600 leading-relaxed">
-                 As a Computer Science graduate from California State University, Fullerton, my focus is on turning ideas into real, usable products. I have a strong foundation in both front-end and back-end technologies, including React, Node.js, Python, and SQL/NoSQL databases.
-                 <br/><br/>
-                 I am particularly interested in UI/UX and secure API integration. My professional experience includes roles at Chipotle and Applied Medical, where I developed strong teamwork and procedural skills. I am always eager to learn and grow as a developer.
-               </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative w-full h-52 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                <Image src="/your-second-photo.jpg" alt="Photo of Carlo 1" layout="fill" objectFit="cover" />
-              </div>
-              <div className="relative w-full h-52 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 mt-8">
-                 <Image src="/your-third-photo.jpg" alt="Another photo of Carlo" layout="fill" objectFit="cover" />
-              </div>
-            </div>
-          </div>
-        </motion.section>
-
-        <motion.section
-          id="projects"
-          className="mt-32"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={fadeIn}
-        >
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">My Projects</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {projects.map((project, i) => (
-              <motion.a
-                key={project.name}
-                href={project.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white p-6 rounded-lg border border-gray-200 hover:border-violet-400 transition-colors group flex flex-col justify-between shadow-sm hover:shadow-lg"
-                custom={i}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.1 } }}
+          <div className="bg-gradient-to-r from-violet-600 to-indigo-600 rounded-3xl p-12 text-center text-white">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">Let's Work Together</h3>
+            <p className="text-xl text-violet-100 mb-8 max-w-2xl mx-auto">
+              I'm always interested in new opportunities and challenging projects. 
+              Let's discuss how I can contribute to your team.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="mailto:carlofc95@gmail.com"
+                className="bg-white text-violet-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
               >
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">{project.name}</h4>
-                  <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map(t => (
-                      <span key={t} className="bg-gray-100 text-gray-600 text-xs font-medium px-2 py-1 rounded-full">{t}</span>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex items-center text-violet-600 mt-4 text-sm font-semibold">
-                  <span>View Project</span>
-                  <ArrowUpRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                </div>
-              </motion.a>
-            ))}
+                <Mail size={20} />
+                <span>Get In Touch</span>
+              </a>
+              <a 
+                href="/Gray and Black Proffessional CV Resume-1.pdf"
+                download
+                className="border-2 border-white text-white hover:bg-white hover:text-violet-600 font-bold py-4 px-8 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
+              >
+                <Download size={20} />
+                <span>Download Resume</span>
+              </a>
+            </div>
           </div>
         </motion.section>
       </main>
 
-      <footer className="container mx-auto px-6 py-8 mt-16 border-t border-gray-200 text-center text-gray-500">
-        <p>&copy; {new Date().getFullYear()} Carlo Castillo. All Rights Reserved.</p>
+      {/* Enhanced Footer */}
+      <footer className="bg-gray-900 text-white">
+        <div className="container mx-auto px-6 py-12">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
+            <div className="space-y-4">
+              <h4 className="text-xl font-bold">Carlo Castillo</h4>
+              <p className="text-gray-400">IT Support Specialist & Full-Stack Developer</p>
+              <p className="text-gray-400 text-sm">
+                Building digital solutions with clean code and intuitive design.
+              </p>
+            </div>
+            
+            <div className="space-y-4">
+              <h5 className="font-semibold text-gray-300">Quick Links</h5>
+              <div className="space-y-2">
+                <a href="#about" className="block text-gray-400 hover:text-white transition-colors">About</a>
+                <a href="#projects" className="block text-gray-400 hover:text-white transition-colors">Projects</a>
+                <a href="#experience" className="block text-gray-400 hover:text-white transition-colors">Experience</a>
+              </div>
+            </div>
+            
+            <div className="space-y-4">
+              <h5 className="font-semibold text-gray-300">Connect</h5>
+              <div className="flex space-x-4">
+                <a href="https://www.linkedin.com/in/carlo-castillo-59827a354/" target="_blank" rel="noopener noreferrer" 
+                   className="text-gray-400 hover:text-white transition-colors">
+                  <Linkedin size={24} />
+                </a>
+                <a href="https://github.com/carloc3005" target="_blank" rel="noopener noreferrer" 
+                   className="text-gray-400 hover:text-white transition-colors">
+                  <Github size={24} />
+                </a>
+                <a href="mailto:carlofc95@gmail.com" 
+                   className="text-gray-400 hover:text-white transition-colors">
+                  <Mail size={24} />
+                </a>
+              </div>
+              <div className="text-gray-400 text-sm space-y-1">
+                <p>carlofc95@gmail.com</p>
+                <p>949-870-0448</p>
+                <p>Rancho Santa Margarita, CA</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; {new Date().getFullYear()} Carlo Castillo. All Rights Reserved.</p>
+            <p className="mt-2">Built with Next.js, TailwindCSS, and Framer Motion</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
