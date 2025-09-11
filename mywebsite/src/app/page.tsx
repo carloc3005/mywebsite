@@ -234,7 +234,7 @@ export default function PortfolioPage() {
                 <p className="text-lg text-gray-600 leading-relaxed">
                   I am seeking an IT support role where I can leverage my skills to ensure system 
                   reliability and provide exceptional user assistance. With professional experience 
-                  at Chipotle and Applied Medical, I've developed strong teamwork and procedural skills.
+                  at Chipotle and Applied Medical, I had developed strong teamwork and procedural skills.
                 </p>
               </div>
 
@@ -329,7 +329,7 @@ export default function PortfolioPage() {
           <motion.div variants={slideUp} className="text-center mb-16">
             <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Featured Projects</h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Here are some of the projects I've built that showcase my skills in full-stack development, 
+              Here are some of the projects I&apos;ve built that showcase my skills in full-stack development, 
               AI integration, and modern web technologies.
             </p>
           </motion.div>
@@ -402,7 +402,7 @@ export default function PortfolioPage() {
           </motion.div>
 
           <div className="max-w-4xl mx-auto space-y-8">
-            {workExperience.map((job, i) => (
+            {workExperience.map((job) => (
               <motion.div
                 key={job.company}
                 variants={slideUp}
@@ -437,10 +437,10 @@ export default function PortfolioPage() {
           variants={fadeIn}
         >
           <div className="bg-gradient-to-r from-violet-600 to-indigo-600 rounded-3xl p-12 text-center text-white">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">Let's Work Together</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">Let&apos;s Work Together</h3>
             <p className="text-xl text-violet-100 mb-8 max-w-2xl mx-auto">
-              I'm always interested in new opportunities and challenging projects. 
-              Let's discuss how I can contribute to your team.
+              I&apos;m always interested in new opportunities and challenging projects. 
+              Let&apos;s discuss how I can contribute to your team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
