@@ -9,21 +9,21 @@ export default function PortfolioPage() {
     {
       name: 'Spotify',
       description: 'A feature-rich music streaming application built with Next.js where users can build a personal library of their favorite songs. The platform delivers an engaging playback experience with a real-time sound wave visualizer and a high-fidelity interface modeled after Spotify.',
-      tech: ['Next.js', 'TailwindCSS', 'Neon Postgre', 'Node.js', 'Stripe'],
+      tech: ['Next.js', 'TailwindCSS', 'Neon Postgres', 'Node.js', 'Stripe'],
       href: '#',
       category: 'Full-Stack'
     },
     {
       name: 'KnifeX',
       description: 'Developed a CS:GO skin-trading platform where users can browse, list, and securely trade virtual knife skins. Delivered a responsive interface and robust REST-style APIs for real-time user flow and trade execution while overcoming state management and plugin-handling challenges.',
-      tech: ['React', 'Node.js', 'Express', 'Neon Postgre'],
+      tech: ['React', 'Node.js', 'Express', 'Neon Postgres'],
       href: '#',
       category: 'Full-Stack'
     },
     {
       name: 'Hello Po',
       description: 'An AI-enhanced video conferencing platform with its core video and chat software powered by GetStream.io. The application connects users in a real-time call with OpenAI\'s generative AI for a live conversation. Upon completion, an Inngrest-managed pipeline automatically generates a concise summary of the discussion.',
-      tech: ['Next.js', 'TailwindCSS', 'Inngest', 'Javascript', 'Neon Postgre', 'GetStream.io'],
+      tech: ['Next.js', 'TailwindCSS', 'Inngest', 'Javascript', 'Neon Postgres', 'GetStream.io'],
       href: '#',
       category: 'AI/Video'
     },
