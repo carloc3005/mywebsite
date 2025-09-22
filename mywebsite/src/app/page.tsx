@@ -8,21 +8,21 @@ export default function PortfolioPage() {
   const projects = [
     {
       name: 'Spotify',
-      description: 'A feature-rich music streaming application built with Next.js where users can build a personal library of their favorite songs. The platform delivers an engaging playback experience with a real-time sound wave visualizer and a high-fidelity interface modeled after Spotify.',
+      description: 'A feature-rich music streaming application built with Next.js where users can build a personal library of their favorite songs. The platform delivers an engaging playback experience with a real-time sound wave visualizer and a high-fidelity interface modeled after Spotify. \n\n🧪 Test with: carlotest@gmail.com / lol123321',
       tech: ['Next.js', 'TailwindCSS', 'Neon Postgres', 'Node.js', 'Stripe'],
-      href: '#',
+      href: 'https://spotify-iota-amber.vercel.app/',
       category: 'Full-Stack'
     },
     {
       name: 'KnifeX',
-      description: 'Developed a CS:GO skin-trading platform where users can browse, list, and securely trade virtual knife skins. Delivered a responsive interface and robust REST-style APIs for real-time user flow and trade execution while overcoming state management and plugin-handling challenges.',
+      description: 'Developed a CS:GO skin-trading platform where users can browse, list, and securely trade virtual knife skins. Delivered a responsive interface and robust REST-style APIs for real-time user flow and trade execution while overcoming state management and plugin-handling challenges. \n\n🧪 Test with: carlotest@gmail.com / lol123321',
       tech: ['React', 'Node.js', 'Express', 'Neon Postgres'],
-      href: '#',
+      href: 'https://knifex.netlify.app/',
       category: 'Full-Stack'
     },
     {
       name: 'Hello Po',
-      description: 'An AI-enhanced video conferencing platform with its core video and chat software powered by GetStream.io. The application connects users in a real-time call with OpenAI\'s generative AI for a live conversation. Upon completion, an Inngrest-managed pipeline automatically generates a concise summary of the discussion.',
+      description: 'An AI-enhanced video conferencing platform with its core video and chat software powered by GetStream.io. The application connects users in a real-time call with OpenAI\'s generative AI for a live conversation. Upon completion, an Inngrest-managed pipeline automatically generates a concise summary of the discussion. \n\n🧪 Test with: carlotest@gmail.com / lol123321',
       tech: ['Next.js', 'TailwindCSS', 'Inngest', 'Javascript', 'Neon Postgres', 'GetStream.io'],
       href: '#',
       category: 'AI/Video'
@@ -78,7 +78,7 @@ export default function PortfolioPage() {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
               Carlo Castillo
             </h1>
-            <p className="text-sm text-gray-500 font-medium">IT Support Specialist</p>
+            <p className="text-sm text-gray-500 font-medium">IT Support Specialist & Full Stack Developer</p>
           </motion.div>
           
           <nav className="flex items-center space-x-6">
