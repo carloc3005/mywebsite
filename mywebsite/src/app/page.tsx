@@ -31,16 +31,22 @@ export default function PortfolioPage() {
 
   const workExperience = [
     {
+      company: 'Starbucks',
+      role: 'Barista',
+      period: 'August 2025 - Current',
+      description: 'Engagement in a team-wide meeting for a proactive approach to learning and a strong willingness to contribute, quickly becoming a valuable member of the store.'
+    },
+    {
       company: 'Chipotle Mexican Grill',
       role: 'Crew Member',
-      period: 'November 2023 - Current',
-      description: 'Processing 300+ customer orders per shift in a COS with 98% accuracy and top-quartile customer satisfaction.'
+      period: 'November 2023 - August 2025',
+      description: 'Proven ability to excel in a high-pressure setting managing a continuous flow of customer orders while upholding strict standards for speed, quality, and service.'
     },
     {
       company: 'Applied Medical',
       role: 'Production Associate',
       period: 'September 2017 - August 2023',
-      description: 'Assisted team leads in organizing and distributing materials to optimize workflow efficiency. Managed all record paperwork in accordance with Standard Operating Procedures (SOP) and SAP system to ensure accurate documentation and compliance.'
+      description: 'A results-driven team lead in their ability to organize and distribute processes, delegating tasks and ensuring operational efficiency.'
     }
   ];
 
