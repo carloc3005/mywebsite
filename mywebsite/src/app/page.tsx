@@ -138,9 +138,10 @@ export default function PortfolioPage() {
                 </h2>
                 
                 <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
-                  Computer Science graduate passionate about solving technical problems and 
-                  supporting users in modern technology environments. Building digital experiences 
-                  with clean code and intuitive design.
+                  Computer Science graduate and software developer with hands-on experience building 
+                  and deploying full-stack applications using Next.js, PostgreSQL, and modern APIs 
+                  like Stripe and OpenAI. Passionate about creating robust software and eager to join 
+                  a team where I can contribute to the entire development lifecycle.
                 </p>
               </div>
 
@@ -226,15 +227,17 @@ export default function PortfolioPage() {
               <div className="space-y-6">
                 <h3 className="text-4xl font-bold text-gray-900">About Me</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  A Computer Science graduate passionate about solving technical problems and 
-                  supporting users in modern technology environments. My background in software 
-                  development provides a deep understanding of application and infrastructure 
-                  issues, enabling me to troubleshoot effectively.
+                  Computer Science graduate and software developer with hands-on experience building 
+                  and deploying full-stack applications using Next.js, PostgreSQL, and modern APIs 
+                  like Stripe and OpenAI. I am passionate about creating robust software and am eager 
+                  to join a team where I can contribute to the entire development lifecycle, from 
+                  initial concept to cloud deployment.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  I am seeking an IT support role where I can leverage my skills to ensure system 
-                  reliability and provide exceptional user assistance. With professional experience 
-                  at Chipotle and Applied Medical, I had developed strong teamwork and procedural skills.
+                  I am currently preparing to earn my AWS Certified Cloud Practitioner credential 
+                  (exam scheduled for end of month). With professional experience at Chipotle and 
+                  Applied Medical, I have developed strong teamwork and procedural skills that 
+                  complement my technical expertise.
                 </p>
               </div>
 
