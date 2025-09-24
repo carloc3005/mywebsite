@@ -24,7 +24,7 @@ export default function PortfolioPage() {
       name: 'Hello Po',
       description: 'An AI-enhanced video conferencing platform with its core video and chat software powered by GetStream.io. The application connects users in a real-time call with OpenAI\'s generative AI for a live conversation. Upon completion, an Inngrest-managed pipeline automatically generates a concise summary of the discussion. \n\n🧪 Test Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
       tech: ['Next.js', 'TailwindCSS', 'Inngest', 'Javascript', 'Neon Postgres', 'GetStream.io'],
-      href: '#',
+      href: 'https://hello-isc1smnye-carlo-castillos-projects-1517593b.vercel.app',
       category: 'AI/Video'
     },
   ];
