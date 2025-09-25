@@ -248,7 +248,7 @@ export default function PortfolioPage() {
                   I enjoy the entire technology lifecycle, from building a computer from scratch 
                   and troubleshooting hardware issues to writing the code for a new application 
                   and deploying it to the cloud. Currently preparing for my AWS Certified Cloud 
-                  Practitioner exam, I'm eager to apply my full-stack development skills in a 
+                  Practitioner exam, I&apos;m eager to apply my full-stack development skills in a 
                   professional environment.
                 </p>
               </div>
