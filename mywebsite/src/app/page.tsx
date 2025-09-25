@@ -27,6 +27,13 @@ export default function PortfolioPage() {
       href: 'https://hello-isc1smnye-carlo-castillos-projects-1517593b.vercel.app',
       category: 'AI/Video'
     },
+    {
+      name: 'AWS Route 53',
+      description: 'Developed and deployed my personal portfolio using AWS Route 53 to register a custom domain and configure its DNS records. The static site is hosted on AWS S3 servers, globally distributed via a CloudFront content delivery network with HTTPS enabled through an SSL certificate from AWS Certificate Manager to enhance HTTPS performance. \n\n🧪 Test Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
+      tech: ['Next.js', 'TailwindCSS', 'AWS Route 53', 'AWS S3', 'AWS CloudFront'],
+      href: 'https://www.carlofc.com',
+      category: 'Cloud/DevOps'
+    },
   ];
 
   const workExperience = [
@@ -204,7 +211,7 @@ export default function PortfolioPage() {
                     </div>
                     <div className="flex justify-center space-x-4 pt-4">
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-gray-900">3+</div>
+                        <div className="text-2xl font-bold text-gray-900">4+</div>
                         <div className="text-sm text-gray-500">Projects</div>
                       </div>
                       <div className="text-center">
