@@ -235,12 +235,12 @@ export default function PortfolioPage() {
                 <p className="text-lg text-gray-600 leading-relaxed">
                   My journey began as a production associate at Applied Medical, where I developed 
                   strong organizational and procedural skills. This experience taught me the importance 
-                  of precision and attention to detail—qualities that translate directly to writing 
+                  of precision and attention to detail qualities that translate directly to writing 
                   clean, maintainable code and following best practices in software development.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   My customer service roles at Starbucks and Chipotle taught me to handle pressure 
-                  and communicate clearly—both critical skills for IT support and collaborating on 
+                  and communicate clearly both critical skills for IT support and collaborating on 
                   a development team. These experiences, combined with my Computer Science degree, 
                   give me a unique perspective on both the technical and human aspects of technology.
                 </p>
@@ -328,7 +328,7 @@ export default function PortfolioPage() {
                   </div>
                   <div className="border-l-4 border-violet-200 pl-4">
                     <h5 className="font-semibold text-gray-900">Cloud Practitioner - In Progress</h5>
-                    <p className="text-gray-600 text-sm">AWS (Exam Schedule September 2025)</p>
+                    <p className="text-gray-600 text-sm">AWS (Exam Schedule October 2025)</p>
                   </div>
                 </div>
               </div>
