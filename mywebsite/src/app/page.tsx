@@ -151,9 +151,9 @@ export default function PortfolioPage() {
                 </motion.div>
                 
                 <h2 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-                  Full-Stack
+                  Full-Stack Developer &
                   <span className="block bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-                    Developer
+                    IT Specialist
                   </span>
                 </h2>
                 
