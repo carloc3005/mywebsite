@@ -144,10 +144,10 @@ export default function PortfolioPage() {
                 </h2>
                 
                 <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
-                  Computer Science graduate and software developer with hands-on experience building 
-                  and deploying full-stack applications using Next.js, PostgreSQL, and modern APIs 
-                  like Stripe and OpenAI. Passionate about creating robust software and eager to join 
-                  a team where I can contribute to the entire development lifecycle.
+                  A Computer Science graduate with a passion for building full-stack applications 
+                  and managing the cloud infrastructure they run on. My experience ranges from 
+                  developing applications with Next.js and AI to assembling hardware and deploying 
+                  websites on AWS.
                 </p>
               </div>
 
@@ -233,39 +233,49 @@ export default function PortfolioPage() {
               <div className="space-y-6">
                 <h3 className="text-4xl font-bold text-gray-900">About Me</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Computer Science graduate and software developer with hands-on experience building 
-                  and deploying full-stack applications using Next.js, PostgreSQL, and modern APIs 
-                  like Stripe and OpenAI. I am passionate about creating robust software and am eager 
-                  to join a team where I can contribute to the entire development lifecycle, from 
-                  initial concept to cloud deployment.
+                  My journey began as a production associate at Applied Medical, where I developed 
+                  strong organizational and procedural skills. This experience taught me the importance 
+                  of precision and attention to detail—qualities that translate directly to writing 
+                  clean, maintainable code and following best practices in software development.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  I am currently preparing to earn my AWS Certified Cloud Practitioner credential 
-                  (exam scheduled for end of month). With professional experience at Chipotle and 
-                  Applied Medical, I have developed strong teamwork and procedural skills that 
-                  complement my technical expertise.
+                  My customer service roles at Starbucks and Chipotle taught me to handle pressure 
+                  and communicate clearly—both critical skills for IT support and collaborating on 
+                  a development team. These experiences, combined with my Computer Science degree, 
+                  give me a unique perspective on both the technical and human aspects of technology.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  I enjoy the entire technology lifecycle, from building a computer from scratch 
+                  and troubleshooting hardware issues to writing the code for a new application 
+                  and deploying it to the cloud. Currently preparing for my AWS Certified Cloud 
+                  Practitioner exam, I'm eager to apply my full-stack development skills in a 
+                  professional environment.
                 </p>
               </div>
 
               {/* Technical Skills */}
               <div className="space-y-4">
                 <h4 className="text-xl font-semibold text-gray-900">Technical Skills</h4>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <h5 className="font-medium text-gray-700 mb-2">Languages:</h5>
-                    <p className="text-gray-600 text-sm">JavaScript, Python</p>
+                    <p className="text-gray-600 text-sm">JavaScript, Python, SQL</p>
                   </div>
                   <div>
-                    <h5 className="font-medium text-gray-700 mb-2">Web:</h5>
-                    <p className="text-gray-600 text-sm">HTML, CSS, React, Node.js</p>
+                    <h5 className="font-medium text-gray-700 mb-2">Frameworks & Libraries:</h5>
+                    <p className="text-gray-600 text-sm">Next.js, React, Node.js, Express, Tailwind CSS</p>
                   </div>
                   <div>
-                    <h5 className="font-medium text-gray-700 mb-2">Tools:</h5>
-                    <p className="text-gray-600 text-sm">Git, VS Code, MySQL, MongoDB, Firebase</p>
+                    <h5 className="font-medium text-gray-700 mb-2">Cloud & DevOps:</h5>
+                    <p className="text-gray-600 text-sm">AWS (Route 53, S3, CloudFront), Git, Vercel</p>
                   </div>
                   <div>
-                    <h5 className="font-medium text-gray-700 mb-2">Others:</h5>
-                    <p className="text-gray-600 text-sm">Problem-solving, Debugging, Agile/Scrum basics</p>
+                    <h5 className="font-medium text-gray-700 mb-2">Databases:</h5>
+                    <p className="text-gray-600 text-sm">PostgreSQL (Neon), MongoDB, Firebase</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <h5 className="font-medium text-gray-700 mb-2">IT & Hardware:</h5>
+                    <p className="text-gray-600 text-sm">PC Hardware Assembly, OS Installation & Configuration, System Troubleshooting, Network Fundamentals</p>
                   </div>
                 </div>
               </div>
