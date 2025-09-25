@@ -8,31 +8,38 @@ export default function PortfolioPage() {
   const projects = [
     {
       name: 'Spotify',
-      description: 'A feature-rich music streaming application built with Next.js where users can build a personal library of their favorite songs. The platform delivers an engaging playback experience with a real-time sound wave visualizer and a high-fidelity interface modeled after Spotify. \n\n🧪 Test Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
+      description: 'A feature-rich music streaming application built with Next.js where users can build a personal library of their favorite songs. The platform delivers an engaging playback experience with a real-time sound wave visualizer and a high-fidelity interface modeled after Spotify. \n\nTest Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
       tech: ['Next.js', 'TailwindCSS', 'Neon Postgres', 'Node.js', 'Stripe'],
       href: 'https://spotify-iota-amber.vercel.app/',
       category: 'Full-Stack'
     },
     {
       name: 'KnifeX',
-      description: 'Developed a CS:GO skin-trading platform where users can browse, list, and securely trade virtual knife skins. Delivered a responsive interface and robust REST-style APIs for real-time user flow and trade execution while overcoming state management and plugin-handling challenges. \n\n🧪 Test Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
+      description: 'Developed a CS:GO skin-trading platform where users can browse, list, and securely trade virtual knife skins. Delivered a responsive interface and robust REST-style APIs for real-time user flow and trade execution while overcoming state management and plugin-handling challenges. \n\nTest Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
       tech: ['React', 'Node.js', 'Express', 'Neon Postgres'],
       href: 'https://knifex.netlify.app/',
       category: 'Full-Stack'
     },
     {
       name: 'Hello Po',
-      description: 'An AI-enhanced video conferencing platform with its core video and chat software powered by GetStream.io. The application connects users in a real-time call with OpenAI\'s generative AI for a live conversation. Upon completion, an Inngrest-managed pipeline automatically generates a concise summary of the discussion. \n\n🧪 Test Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
+      description: 'An AI-enhanced video conferencing platform with its core video and chat software powered by GetStream.io. The application connects users in a real-time call with OpenAI\'s generative AI for a live conversation. Upon completion, an Inngrest-managed pipeline automatically generates a concise summary of the discussion. \n\nTest Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
       tech: ['Next.js', 'TailwindCSS', 'Inngest', 'Javascript', 'Neon Postgres', 'GetStream.io'],
       href: 'https://hello-isc1smnye-carlo-castillos-projects-1517593b.vercel.app',
       category: 'AI/Video'
     },
     {
       name: 'AWS Route 53',
-      description: 'Developed and deployed my personal portfolio using AWS Route 53 to register a custom domain and configure its DNS records. The static site is hosted on AWS S3 servers, globally distributed via a CloudFront content delivery network with HTTPS enabled through an SSL certificate from AWS Certificate Manager to enhance HTTPS performance. \n\n🧪 Test Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
+      description: 'Developed and deployed my personal portfolio using AWS Route 53 to register a custom domain and configure its DNS records. The static site is hosted on AWS S3 servers, globally distributed via a CloudFront content delivery network with HTTPS enabled through an SSL certificate from AWS Certificate Manager to enhance HTTPS performance.',
       tech: ['Next.js', 'TailwindCSS', 'AWS Route 53', 'AWS S3', 'AWS CloudFront'],
       href: 'https://www.carlofc.com',
       category: 'Cloud/DevOps'
+    },
+    {
+      name: 'Custom PC & System Configuration',
+      description: 'Built and configured custom gaming and workstation PCs from the ground up, including component selection, assembly, BIOS configuration, and operating system installation. Specialized in performance optimization, thermal management, and system troubleshooting. Projects include high-performance gaming rigs, development workstations, and budget-friendly builds tailored to specific user requirements. \n\nGallery coming soon - Pictures will be added to showcase completed builds and configurations.',
+      tech: ['PC Hardware Assembly', 'Windows/Linux Installation', 'BIOS Configuration', 'System Optimization', 'Troubleshooting'],
+      href: '#',
+      category: 'Hardware/IT'
     },
   ];
 
@@ -211,7 +218,7 @@ export default function PortfolioPage() {
                     </div>
                     <div className="flex justify-center space-x-4 pt-4">
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-gray-900">4+</div>
+                        <div className="text-2xl font-bold text-gray-900">5+</div>
                         <div className="text-sm text-gray-500">Projects</div>
                       </div>
                       <div className="text-center">
