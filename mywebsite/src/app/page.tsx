@@ -38,7 +38,7 @@ export default function PortfolioPage() {
       name: 'Custom PC & System Configuration',
       description: 'Built and configured custom gaming and workstation PCs from the ground up, including component selection, assembly, BIOS configuration, and operating system installation. Specialized in performance optimization, thermal management, and system troubleshooting. Projects include high-performance gaming rigs, development workstations, and budget-friendly builds tailored to specific user requirements. \n\nGallery coming soon - Pictures will be added to showcase completed builds and configurations.',
       tech: ['PC Hardware Assembly', 'Windows/Linux Installation', 'BIOS Configuration', 'System Optimization', 'Troubleshooting'],
-      href: '#',
+      href: 'https://docs.google.com/document/d/13zbWH6eNL_1RS9pi--bo2DGuau4_rFT_fFn1gnzbqRo/edit?tab=t.0',
       category: 'Hardware/IT'
     },
   ];
