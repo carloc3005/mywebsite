@@ -356,7 +356,7 @@ export default function PortfolioPage() {
                   </div>
                   <div className="border-l-4 border-violet-200 pl-4 space-y-2">
                     <a 
-                      href="https://www.credly.com/go/vdhrdAQJ5yFPPggWd7jbdQ" 
+                      href="https://www.credly.com/badges/e5b9e874-0858-4ebf-80e9-5ec36176222c/public_url" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="block hover:bg-violet-50 -ml-4 pl-4 py-2 rounded-r transition-colors group"
