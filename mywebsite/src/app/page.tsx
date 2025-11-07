@@ -35,6 +35,13 @@ export default function PortfolioPage() {
       category: 'Cloud/DevOps'
     },
     {
+      name: 'Netflix Data Visualization',
+      description: 'Created interactive data visualizations using AWS QuickSight to analyze Netflix content trends. Imported a Netflix CSV dataset and built multiple insightful graphs and dashboards to visualize patterns in content distribution, ratings, genres, and release trends. This beginner-level project demonstrates proficiency in AWS cloud services and data visualization techniques.',
+      tech: ['AWS QuickSight', 'Data Visualization', 'CSV Data Analysis', 'AWS S3'],
+      href: '#',
+      category: 'Cloud/DevOps'
+    },
+    {
       name: 'Custom PC & System Configuration',
       description: 'Built and configured custom gaming and workstation PCs from the ground up, including component selection, assembly, BIOS configuration, and operating system installation. Specialized in performance optimization, thermal management, and system troubleshooting. Projects include high-performance gaming rigs, development workstations, and budget-friendly builds tailored to specific user requirements. \n\nGallery coming soon - Pictures will be added to showcase completed builds and configurations.',
       tech: ['PC Hardware Assembly', 'Windows/Linux Installation', 'BIOS Configuration', 'System Optimization', 'Troubleshooting'],
@@ -261,8 +268,8 @@ export default function PortfolioPage() {
                 <p className="text-lg text-gray-600 leading-relaxed">
                   I enjoy the entire technology lifecycle, from building a computer from scratch 
                   and troubleshooting hardware issues to writing the code for a new application 
-                  and deploying it to the cloud. Currently preparing for my AWS Certified Cloud 
-                  Practitioner exam, I&apos;m eager to apply my full-stack development skills in a 
+                  and deploying it to the cloud. As an AWS Certified Cloud Practitioner, 
+                  I&apos;m eager to apply my full-stack development skills and cloud expertise in a 
                   professional environment.
                 </p>
               </div>
@@ -341,8 +348,12 @@ export default function PortfolioPage() {
                     <p className="text-gray-600 text-sm">Supersimpledev</p>
                   </div>
                   <div className="border-l-4 border-violet-200 pl-4">
-                    <h5 className="font-semibold text-gray-900">Cloud Practitioner - In Progress</h5>
-                    <p className="text-gray-600 text-sm">AWS (Exam Schedule October 2025)</p>
+                    <h5 className="font-semibold text-gray-900">AWS Certified Cloud Practitioner</h5>
+                    <p className="text-gray-600 text-sm">AWS (Certified 2025)</p>
+                  </div>
+                  <div className="border-l-4 border-violet-200 pl-4">
+                    <h5 className="font-semibold text-gray-900">AWS Solutions Architect Associate - In Progress</h5>
+                    <p className="text-gray-600 text-sm">AWS (Exam Scheduled December 2025)</p>
                   </div>
                 </div>
               </div>
