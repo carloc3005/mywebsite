@@ -38,7 +38,7 @@ export default function PortfolioPage() {
       name: 'Netflix Data Visualization',
       description: 'Created interactive data visualizations using AWS QuickSight to analyze Netflix content trends. Imported a Netflix CSV dataset and built multiple insightful graphs and dashboards to visualize patterns in content distribution, ratings, genres, and release trends. This beginner-level project demonstrates proficiency in AWS cloud services and data visualization techniques.',
       tech: ['AWS QuickSight', 'Data Visualization', 'CSV Data Analysis', 'AWS S3'],
-      href: '#',
+      href: 'https://www.canva.com/design/DAG3TsKihNM/7hTnwhnqbzFiOrqq0rRqUQ/edit',
       category: 'Cloud/DevOps'
     },
     {
