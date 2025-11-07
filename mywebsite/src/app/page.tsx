@@ -42,6 +42,13 @@ export default function PortfolioPage() {
       category: 'Cloud/DevOps'
     },
     {
+      name: 'AWS IAM Security & Access Management',
+      description: 'Implemented AWS Identity and Access Management (IAM) best practices by provisioning an EC2 instance and designing custom security policies using JSON. Created IAM users with specific permissions and tested the policy enforcement to ensure proper access control. This project demonstrates hands-on experience with AWS security fundamentals, least privilege principles, and policy-based access management for cloud resources.',
+      tech: ['AWS IAM', 'AWS EC2', 'JSON Policy', 'Access Control', 'Cloud Security'],
+      href: 'https://www.canva.com/design/DAG3_H68-3Y/rZGDfMm4ejLV7d0P4Xxtmw/edit',
+      category: 'Cloud/DevOps'
+    },
+    {
       name: 'Custom PC & System Configuration',
       description: 'Built and configured custom gaming and workstation PCs from the ground up, including component selection, assembly, BIOS configuration, and operating system installation. Specialized in performance optimization, thermal management, and system troubleshooting. Projects include high-performance gaming rigs, development workstations, and budget-friendly builds tailored to specific user requirements. \n\nGallery coming soon - Pictures will be added to showcase completed builds and configurations.',
       tech: ['PC Hardware Assembly', 'Windows/Linux Installation', 'BIOS Configuration', 'System Optimization', 'Troubleshooting'],
