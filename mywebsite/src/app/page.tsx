@@ -354,9 +354,31 @@ export default function PortfolioPage() {
                     <h5 className="font-semibold text-gray-900">JavaScript Full Course</h5>
                     <p className="text-gray-600 text-sm">Supersimpledev</p>
                   </div>
-                  <div className="border-l-4 border-violet-200 pl-4">
-                    <h5 className="font-semibold text-gray-900">AWS Certified Cloud Practitioner</h5>
-                    <p className="text-gray-600 text-sm">AWS (Certified 2025)</p>
+                  <div className="border-l-4 border-violet-200 pl-4 space-y-2">
+                    <a 
+                      href="https://www.credly.com/go/vdhrdAQJ5yFPPggWd7jbdQ" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block hover:bg-violet-50 -ml-4 pl-4 py-2 rounded-r transition-colors group"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <h5 className="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors">
+                            AWS Certified Cloud Practitioner ✓
+                          </h5>
+                          <p className="text-gray-600 text-sm">AWS (Certified 2025) • Click to verify credential</p>
+                        </div>
+                        <ArrowUpRight className="w-4 h-4 text-gray-400 group-hover:text-violet-600 transition-colors" />
+                      </div>
+                    </a>
+                    <a 
+                      href="/AWS-Certified-Cloud-Practitioner.pdf" 
+                      download
+                      className="inline-flex items-center text-sm text-violet-600 hover:text-violet-700 font-medium transition-colors"
+                    >
+                      <Download className="w-3 h-3 mr-1" />
+                      Download Certificate PDF
+                    </a>
                   </div>
                   <div className="border-l-4 border-violet-200 pl-4">
                     <h5 className="font-semibold text-gray-900">AWS Solutions Architect Associate - In Progress</h5>
