@@ -573,7 +573,6 @@ export default function PortfolioPage() {
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
             <p>&copy; {new Date().getFullYear()} Carlo Castillo. All Rights Reserved.</p>
-            <p className="mt-2">Built with Next.js, TailwindCSS, and Framer Motion</p>
           </div>
         </div>
       </footer>
