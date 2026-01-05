@@ -354,32 +354,22 @@ export default function PortfolioPage() {
                     <h5 className="font-semibold text-gray-900">JavaScript Full Course</h5>
                     <p className="text-gray-600 text-sm">Supersimpledev</p>
                   </div>
-                  <div className="border-l-4 border-violet-200 pl-4 space-y-2">
-                    <a 
-                      href="https://www.credly.com/badges/e5b9e874-0858-4ebf-80e9-5ec36176222c/public_url" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="block hover:bg-violet-50 -ml-4 pl-4 py-2 rounded-r transition-colors group"
-                    >
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <h5 className="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors">
-                            AWS Certified Cloud Practitioner ✓
-                          </h5>
-                          <p className="text-gray-600 text-sm">AWS (Certified 2025) • Click to verify credential</p>
-                        </div>
-                        <ArrowUpRight className="w-4 h-4 text-gray-400 group-hover:text-violet-600 transition-colors" />
+                  <a 
+                    href="https://www.credly.com/badges/e5b9e874-0858-4ebf-80e9-5ec36176222c/public_url" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block border-l-4 border-violet-200 pl-4 hover:border-violet-400 hover:bg-violet-50 py-2 transition-colors group"
+                  >
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h5 className="font-semibold text-gray-900 group-hover:text-violet-600 transition-colors">
+                          AWS Certified Cloud Practitioner ✓
+                        </h5>
+                        <p className="text-gray-600 text-sm">AWS (Certified 2025) • Click to verify credential</p>
                       </div>
-                    </a>
-                    <a 
-                      href="/AWS-Certified-Cloud-Practitioner.pdf" 
-                      download
-                      className="inline-flex items-center text-sm text-violet-600 hover:text-violet-700 font-medium transition-colors"
-                    >
-                      <Download className="w-3 h-3 mr-1" />
-                      Download Certificate PDF
-                    </a>
-                  </div>
+                      <ArrowUpRight className="w-4 h-4 text-gray-400 group-hover:text-violet-600 transition-colors" />
+                    </div>
+                  </a>
                   <div className="border-l-4 border-violet-200 pl-4">
                     <h5 className="font-semibold text-gray-900">AWS Solutions Architect Associate - In Progress</h5>
                     <p className="text-gray-600 text-sm">AWS (Exam Scheduled December 2025)</p>
