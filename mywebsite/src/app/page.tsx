@@ -372,7 +372,7 @@ export default function PortfolioPage() {
                   </a>
                   <div className="border-l-4 border-violet-200 pl-4">
                     <h5 className="font-semibold text-gray-900">AWS Solutions Architect Associate - In Progress</h5>
-                    <p className="text-gray-600 text-sm">AWS (Exam Scheduled December 2025)</p>
+                    <p className="text-gray-600 text-sm">AWS (Exam Scheduled February 2026)</p>
                   </div>
                 </div>
               </div>
