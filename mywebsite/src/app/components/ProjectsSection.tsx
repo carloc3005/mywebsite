@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Github } from 'lucide-react';
 import { staggerChildren, slideUp } from '../data/animations';
 import { projects } from '../data/projects';
 
@@ -57,15 +57,29 @@ export default function ProjectsSection() {
                   ))}
                 </div>
                 
-                <a
-                  href={project.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-violet-600 hover:text-violet-700 font-semibold text-sm transition-colors group"
-                >
-                  <span>View Project</span>
-                  <ArrowUpRight className="ml-1 w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                </a>
+                <div className="flex items-center gap-4">
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-violet-600 hover:text-violet-700 font-semibold text-sm transition-colors group"
+                  >
+                    <span>View Project</span>
+                    <ArrowUpRight className="ml-1 w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </a>
+                  
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-gray-700 hover:text-violet-600 font-semibold text-sm transition-colors group"
+                    >
+                      <Github className="w-4 h-4 mr-1" />
+                      <span>GitHub</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
             
