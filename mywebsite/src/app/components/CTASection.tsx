@@ -28,7 +28,7 @@ export default function CTASection() {
             <span>Get In Touch</span>
           </a>
           <a 
-            href="/Gray and Black Proffessional CV Resume-1.pdf"
+            href="/Carlo-Castillo-Resume-2026.pdf"
             download
             className="border-2 border-white text-white hover:bg-white hover:text-violet-600 font-bold py-4 px-8 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
           >

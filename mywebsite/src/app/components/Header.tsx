@@ -34,7 +34,7 @@ export default function Header() {
               <Github size={20} />
             </a>
             <a
-              href="/Gray and Black Proffessional CV Resume-1.pdf"
+              href="/Carlo-Castillo-Resume-2026.pdf"
               download
               className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-semibold py-2.5 px-4 rounded-lg flex items-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-violet-500/25"
             >
