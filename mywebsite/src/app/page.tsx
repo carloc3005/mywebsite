@@ -52,14 +52,14 @@ export default function PortfolioPage() {
       name: 'Multi-City Weather Tracker',
       description: 'Built a serverless weather tracking application using AWS Lambda and API Gateway to fetch real-time weather data for multiple cities. The application leverages DynamoDB for storing user preferences and historical weather data, while CloudWatch monitors system performance and logs. Integrated with OpenWeatherMap API to provide accurate temperature, humidity, and forecast information across different geographical locations.',
       tech: ['AWS Lambda', 'AWS API Gateway', 'AWS DynamoDB', 'AWS CloudWatch', 'Python', 'OpenWeatherMap API'],
-      href: 'https://www.carlofc.com/weather-tracker',
+      href: 'https://github.com/carloc3005/multi-cloud-weather-tracker',
       category: 'Cloud/DevOps'
     },
     {
       name: 'AWS Stock Analysis Dashboard',
       description: 'Developed a cloud-based stock analysis platform using AWS services to process and visualize real-time market data. Utilized AWS Lambda for data processing, S3 for storing historical stock data, and QuickSight for creating interactive dashboards displaying stock trends, moving averages, and market indicators. Implemented automated data pipelines using EventBridge to schedule daily market data updates and analysis reports.',
       tech: ['AWS Lambda', 'AWS S3', 'AWS QuickSight', 'AWS EventBridge', 'Python', 'Financial APIs'],
-      href: 'https://www.carlofc.com/stock-analysis',
+      href: 'https://github.com/carloc3005/aws-stock-analytics',
       category: 'Cloud/DevOps'
     },
     {
