@@ -127,7 +127,7 @@ export default function PortfolioPage() {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
               Carlo Castillo
             </h1>
-            <p className="text-sm text-gray-500 font-medium">IT Support Specialist & Full Stack Developer</p>
+            <p className="text-sm text-gray-500 font-medium">Cloud Solution Architect and Web Developer</p>
           </motion.div>
           
           <nav className="flex items-center space-x-6">
@@ -243,7 +243,7 @@ export default function PortfolioPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Carlo Castillo</h3>
-                      <p className="text-violet-600 font-medium">IT Support Specialist</p>
+                      <p className="text-violet-600 font-medium">Cloud Solution Architect</p>
                     </div>
                     <div className="flex justify-center space-x-4 pt-4">
                       <div className="text-center">
