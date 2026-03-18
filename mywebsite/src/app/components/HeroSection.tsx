@@ -27,9 +27,9 @@ export default function HeroSection() {
             </motion.div>
             
             <h2 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-              Full-Stack Developer &
+              Cloud Solution Architect
               <span className="block bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-                IT Specialist
+                and Web Developer
               </span>
             </h2>
             
@@ -90,7 +90,7 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">Carlo Castillo</h3>
-                  <p className="text-violet-600 font-medium">IT Support Specialist</p>
+                  <p className="text-violet-600 font-medium">Cloud Solution Architect</p>
                 </div>
                 <div className="flex justify-center space-x-4 pt-4">
                   <div className="text-center">
