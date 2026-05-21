@@ -1,5 +1,13 @@
 export const projects = [
   {
+    name: '3-Tier WordPress on AWS',
+    description: 'Architected and deployed a highly available, secure 3-Tier WordPress website on AWS utilizing a custom VPC with isolated public/private subnets, an Application Load Balancer, EC2 auto-scaling, Amazon RDS (MySQL), and Amazon EFS for shared storage.',
+    tech: ['AWS VPC', 'AWS EC2', 'AWS RDS', 'AWS ALB', 'Amazon EFS'],
+    href: 'https://github.com/carloc3005/3-tier-wordpress-website',
+    github: 'https://github.com/carloc3005/3-tier-wordpress-website',
+    category: 'Cloud/DevOps'
+  },
+  {
     name: 'Spotify',
     description: 'A feature-rich music streaming application built with Next.js where users can build a personal library of their favorite songs. The platform delivers an engaging playback experience with a real-time sound wave visualizer and a high-fidelity interface modeled after Spotify. \n\nTest Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
     tech: ['Next.js', 'TailwindCSS', 'Neon Postgres', 'Node.js', 'Stripe'],
