@@ -32,7 +32,7 @@ export default function PortfolioPage() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-slate-50 via-white to-violet-50 text-gray-800 min-h-screen">
+    <div className="bg-gradient-to-br from-slate-50 via-white to-emerald-50 text-gray-800 min-h-screen">
       {/* Enhanced Header */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200/50 shadow-sm">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -41,7 +41,7 @@ export default function PortfolioPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
               Carlo Castillo
             </h1>
             <p className="text-sm text-gray-500 font-medium">Cloud Solution Architect and Web Developer</p>
@@ -49,23 +49,23 @@ export default function PortfolioPage() {
           
           <nav className="flex items-center space-x-6">
             <div className="hidden md:flex items-center space-x-6 text-sm">
-              <a href="#about" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">About</a>
-              <a href="#projects" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">Projects</a>
-              <a href="#experience" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">Experience</a>
+              <a href="#about" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">About</a>
+              <a href="#projects" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">Projects</a>
+              <a href="#experience" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">Experience</a>
             </div>
             <div className="flex items-center space-x-3">
               <a href="https://www.linkedin.com/in/carlo-castillo-59827a354/" target="_blank" rel="noopener noreferrer" 
-                 className="text-gray-500 hover:text-violet-600 transition-colors p-2 rounded-lg hover:bg-violet-50">
+                 className="text-gray-500 hover:text-emerald-600 transition-colors p-2 rounded-lg hover:bg-emerald-50">
                 <Linkedin size={20} />
               </a>
               <a href="https://github.com/carloc3005" target="_blank" rel="noopener noreferrer" 
-                 className="text-gray-500 hover:text-violet-600 transition-colors p-2 rounded-lg hover:bg-violet-50">
+                 className="text-gray-500 hover:text-emerald-600 transition-colors p-2 rounded-lg hover:bg-emerald-50">
                 <Github size={20} />
               </a>
               <a
                 href="/Gray and Black Proffessional CV Resume-1.pdf"
                 download
-                className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-semibold py-2.5 px-4 rounded-lg flex items-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-violet-500/25"
+                className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold py-2.5 px-4 rounded-lg flex items-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-emerald-500/25"
               >
                 <Download size={16} />
                 <span className="hidden sm:inline">Resume</span>
@@ -90,7 +90,7 @@ export default function PortfolioPage() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="inline-flex items-center px-4 py-2 bg-violet-100 rounded-full text-violet-700 font-medium text-sm"
+                  className="inline-flex items-center px-4 py-2 bg-emerald-100 rounded-full text-emerald-700 font-medium text-sm"
                 >
                   <Code className="w-4 h-4 mr-2" />
                   Available for new opportunities
@@ -98,7 +98,7 @@ export default function PortfolioPage() {
                 
                 <h2 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
                   Cloud Solution Architect
-                  <span className="block bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+                  <span className="block bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                     and Web Developer
                   </span>
                 </h2>
@@ -114,27 +114,27 @@ export default function PortfolioPage() {
               {/* Contact Info */}
               <div className="flex flex-wrap gap-6 text-gray-600">
                 <div className="flex items-center space-x-2">
-                  <Phone className="w-4 h-4 text-violet-600" />
+                  <Phone className="w-4 h-4 text-emerald-600" />
                   <span>949-870-0448</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Mail className="w-4 h-4 text-violet-600" />
+                  <Mail className="w-4 h-4 text-emerald-600" />
                   <span>carlofc95@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <MapPin className="w-4 h-4 text-violet-600" />
+                  <MapPin className="w-4 h-4 text-emerald-600" />
                   <span>Rancho Santa Margarita, CA 92688</span>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a href="mailto:carlofc95@gmail.com" 
-                   className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-violet-500/25">
+                   className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-emerald-500/25">
                   <Mail size={20} />
                   <span>Contact Me</span>
                 </a>
                 <a href="#projects" 
-                   className="bg-white border-2 border-gray-200 hover:border-violet-300 text-gray-800 font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all hover:shadow-lg">
+                   className="bg-white border-2 border-gray-200 hover:border-emerald-300 text-gray-800 font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all hover:shadow-lg">
                   <span>View Projects</span>
                   <ArrowUpRight size={20} />
                 </a>
@@ -146,10 +146,10 @@ export default function PortfolioPage() {
               className="lg:col-span-5 relative"
             >
               <div className="relative w-full max-w-md mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-r from-violet-400 to-indigo-400 rounded-3xl blur-3xl opacity-30 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-3xl blur-3xl opacity-30 animate-pulse"></div>
                 <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
                   <div className="text-center space-y-4">
-                    <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-violet-100">
+                    <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-emerald-100">
                       <Image
                         src="/profile-pic1.jpg"
                         alt="Carlo Castillo"
@@ -160,7 +160,7 @@ export default function PortfolioPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Carlo Castillo</h3>
-                      <p className="text-violet-600 font-medium">Cloud Solution Architect</p>
+                      <p className="text-emerald-600 font-medium">Cloud Solution Architect</p>
                     </div>
                     <div className="flex justify-center space-x-4 pt-4">
                       <div className="text-center">
@@ -211,12 +211,12 @@ export default function PortfolioPage() {
                     <div className="flex-1">
                       <div className="flex items-center space-x-2 mb-2">
                         <h4 className="text-2xl font-bold text-gray-900">{project.name}</h4>
-                        <span className="px-2 py-1 bg-violet-100 text-violet-700 text-xs font-medium rounded-full">
+                        <span className="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">
                           {project.category}
                         </span>
                       </div>
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-violet-600 transition-colors transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                    <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-emerald-600 transition-colors transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                   </div>
                   
                   <p className="text-gray-600 mb-6 leading-relaxed text-sm">
@@ -226,7 +226,7 @@ export default function PortfolioPage() {
                   <div className="space-y-4">
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map(tech => (
-                        <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full hover:bg-violet-100 hover:text-violet-700 transition-colors">
+                        <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full hover:bg-emerald-100 hover:text-emerald-700 transition-colors">
                           {tech}
                         </span>
                       ))}
@@ -236,7 +236,7 @@ export default function PortfolioPage() {
                       href={project.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-violet-600 hover:text-violet-700 font-semibold text-sm transition-colors group"
+                      className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-semibold text-sm transition-colors group"
                     >
                       <span>View Project</span>
                       <ArrowUpRight className="ml-1 w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
@@ -244,7 +244,7 @@ export default function PortfolioPage() {
                   </div>
                 </div>
                 
-                <div className="h-1 bg-gradient-to-r from-violet-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                <div className="h-1 bg-gradient-to-r from-emerald-500 to-teal-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </motion.div>
             ))}
           </div>
@@ -274,12 +274,12 @@ export default function PortfolioPage() {
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-center space-x-4 mb-4 md:mb-0">
-                    <div className="p-3 bg-violet-100 rounded-lg">
-                      <Briefcase className="w-6 h-6 text-violet-600" />
+                    <div className="p-3 bg-emerald-100 rounded-lg">
+                      <Briefcase className="w-6 h-6 text-emerald-600" />
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-gray-900">{job.role}</h4>
-                      <p className="text-lg text-violet-600 font-semibold">{job.company}</p>
+                      <p className="text-lg text-emerald-600 font-semibold">{job.company}</p>
                     </div>
                   </div>
                   <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
@@ -300,16 +300,16 @@ export default function PortfolioPage() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeIn}
         >
-          <div className="bg-gradient-to-r from-violet-600 to-indigo-600 rounded-3xl p-12 text-center text-white">
+          <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl p-12 text-center text-white">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">Let&apos;s Work Together</h3>
-            <p className="text-xl text-violet-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
               I&apos;m always interested in new opportunities and challenging projects. 
               Let&apos;s discuss how I can contribute to your team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="mailto:carlofc95@gmail.com"
-                className="bg-white text-violet-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
+                className="bg-white text-emerald-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
               >
                 <Mail size={20} />
                 <span>Get In Touch</span>
@@ -317,7 +317,7 @@ export default function PortfolioPage() {
               <a 
                 href="/Gray and Black Proffessional CV Resume-1.pdf"
                 download
-                className="border-2 border-white text-white hover:bg-white hover:text-violet-600 font-bold py-4 px-8 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
+                className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 font-bold py-4 px-8 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
               >
                 <Download size={20} />
                 <span>Download Resume</span>

@@ -20,7 +20,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center px-4 py-2 bg-violet-100 rounded-full text-violet-700 font-medium text-sm"
+              className="inline-flex items-center px-4 py-2 bg-emerald-100 rounded-full text-emerald-700 font-medium text-sm"
             >
               <Code className="w-4 h-4 mr-2" />
               Available for new opportunities
@@ -28,7 +28,7 @@ export default function HeroSection() {
             
             <h2 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
               Cloud Solution Architect
-              <span className="block bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                 and Web Developer
               </span>
             </h2>
@@ -44,27 +44,27 @@ export default function HeroSection() {
           {/* Contact Info */}
           <div className="flex flex-wrap gap-6 text-gray-600">
             <div className="flex items-center space-x-2">
-              <Phone className="w-4 h-4 text-violet-600" />
+              <Phone className="w-4 h-4 text-emerald-600" />
               <span>949-870-0448</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Mail className="w-4 h-4 text-violet-600" />
+              <Mail className="w-4 h-4 text-emerald-600" />
               <span>carlofc95@gmail.com</span>
             </div>
             <div className="flex items-center space-x-2">
-              <MapPin className="w-4 h-4 text-violet-600" />
+              <MapPin className="w-4 h-4 text-emerald-600" />
               <span>Rancho Santa Margarita, CA 92688</span>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <a href="mailto:carlofc95@gmail.com" 
-               className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-violet-500/25">
+               className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-emerald-500/25">
               <Mail size={20} />
               <span>Contact Me</span>
             </a>
             <a href="#projects" 
-               className="bg-white border-2 border-gray-200 hover:border-violet-300 text-gray-800 font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all hover:shadow-lg">
+               className="bg-white border-2 border-gray-200 hover:border-emerald-300 text-gray-800 font-bold py-4 px-8 rounded-xl flex items-center justify-center space-x-2 transition-all hover:shadow-lg">
               <span>View Projects</span>
               <ArrowUpRight size={20} />
             </a>
@@ -76,10 +76,10 @@ export default function HeroSection() {
           className="lg:col-span-5 relative"
         >
           <div className="relative w-full max-w-md mx-auto">
-            <div className="absolute inset-0 bg-gradient-to-r from-violet-400 to-indigo-400 rounded-3xl blur-3xl opacity-30 animate-pulse"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-3xl blur-3xl opacity-30 animate-pulse"></div>
             <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
               <div className="text-center space-y-4">
-                <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-violet-100">
+                <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-emerald-100">
                   <Image
                     src="/profile-pic1.jpg"
                     alt="Carlo Castillo"
@@ -90,7 +90,7 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">Carlo Castillo</h3>
-                  <p className="text-violet-600 font-medium">Cloud Solution Architect</p>
+                  <p className="text-emerald-600 font-medium">Cloud Solution Architect</p>
                 </div>
                 <div className="flex justify-center space-x-4 pt-4">
                   <div className="text-center">

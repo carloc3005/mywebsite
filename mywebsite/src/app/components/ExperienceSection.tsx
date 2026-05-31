@@ -31,12 +31,12 @@ export default function ExperienceSection() {
           >
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
               <div className="flex items-center space-x-4 mb-4 md:mb-0">
-                <div className="p-3 bg-violet-100 rounded-lg">
-                  <Briefcase className="w-6 h-6 text-violet-600" />
+                <div className="p-3 bg-emerald-100 rounded-lg">
+                  <Briefcase className="w-6 h-6 text-emerald-600" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900">{job.role}</h4>
-                  <p className="text-lg text-violet-600 font-semibold">{job.company}</p>
+                  <p className="text-lg text-emerald-600 font-semibold">{job.company}</p>
                 </div>
               </div>
               <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">

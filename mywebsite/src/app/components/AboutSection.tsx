@@ -41,7 +41,7 @@ export default function AboutSection() {
                 <p>
                   With my Computer Science degree and AWS Cloud Practitioner certification, I've shifted my focus to cloud 
                   infrastructure while maintaining strong full-stack development skills. I'm preparing for my Solutions Architect 
-                  exam in April, and I'm passionate about designing AWS solutions, building applications end-to-end, and tackling 
+                  exam in June, and I'm passionate about designing AWS solutions, building applications end-to-end, and tackling 
                   challenges across the entire technology stack which is front-end and back-end. From infrastructure design to application development and cost optimization, 
                   I'm building comprehensive expertise.
                 </p>
@@ -58,9 +58,9 @@ export default function AboutSection() {
             <div className="space-y-6">
               <h4 className="text-2xl font-bold text-gray-900">Technical Expertise</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="md:col-span-2 bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl border border-indigo-200">
+                <div className="md:col-span-2 bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-xl border border-teal-200">
                   <div className="flex items-center space-x-2 mb-3">
-                    <Cloud className="w-5 h-5 text-indigo-600" />
+                    <Cloud className="w-5 h-5 text-teal-600" />
                     <h5 className="font-semibold text-gray-900">AWS & Cloud Architecture</h5>
                   </div>
                   <p className="text-gray-700 text-sm">EC2 • S3 • Lambda • CloudFront • Route 53 • VPC • IAM • CloudFormation • RDS • DynamoDB • API Gateway</p>
@@ -96,10 +96,10 @@ export default function AboutSection() {
           {/* Right Column - Education & Certifications */}
           <motion.div variants={slideUp} className="space-y-8">
             {/* Education */}
-            <div className="bg-gradient-to-br from-violet-50 to-violet-100 p-8 rounded-2xl border border-violet-200">
+            <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 p-8 rounded-2xl border border-emerald-200">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="p-3 bg-violet-200 rounded-lg">
-                  <GraduationCap className="w-6 h-6 text-violet-600" />
+                <div className="p-3 bg-emerald-200 rounded-lg">
+                  <GraduationCap className="w-6 h-6 text-emerald-600" />
                 </div>
                 <h4 className="text-2xl font-bold text-gray-900">Education</h4>
               </div>
@@ -107,13 +107,13 @@ export default function AboutSection() {
               <div className="space-y-6">
                 <div className="bg-white bg-opacity-70 p-4 rounded-xl">
                   <h5 className="text-lg font-semibold text-gray-900">Bachelor in Computer Science</h5>
-                  <p className="text-violet-600 font-medium text-sm mt-1">California State University, Fullerton</p>
+                  <p className="text-emerald-600 font-medium text-sm mt-1">California State University, Fullerton</p>
                   <p className="text-gray-500 text-sm">2019-2025</p>
                 </div>
                 
                 <div className="bg-white bg-opacity-70 p-4 rounded-xl">
                   <h5 className="text-lg font-semibold text-gray-900">CSU General Education - Breadth</h5>
-                  <p className="text-violet-600 font-medium text-sm mt-1">Saddleback College & Irvine Valley College</p>
+                  <p className="text-emerald-600 font-medium text-sm mt-1">Saddleback College & Irvine Valley College</p>
                   <p className="text-gray-500 text-sm">2013-2022</p>
                 </div>
               </div>
@@ -123,19 +123,19 @@ export default function AboutSection() {
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h4 className="text-2xl font-bold text-gray-900 mb-6">Certifications & Courses</h4>
               <div className="space-y-3">
-                <div className="border-l-4 border-violet-400 pl-4 py-2 hover:bg-violet-50 rounded transition-colors">
+                <div className="border-l-4 border-emerald-400 pl-4 py-2 hover:bg-emerald-50 rounded transition-colors">
                   <h5 className="font-semibold text-gray-900">Full-Stack Web Development</h5>
                   <p className="text-gray-600 text-sm">Udemy</p>
                 </div>
-                <div className="border-l-4 border-violet-400 pl-4 py-2 hover:bg-violet-50 rounded transition-colors">
+                <div className="border-l-4 border-emerald-400 pl-4 py-2 hover:bg-emerald-50 rounded transition-colors">
                   <h5 className="font-semibold text-gray-900">Python Programming</h5>
                   <p className="text-gray-600 text-sm">Udemy</p>
                 </div>
-                <div className="border-l-4 border-violet-400 pl-4 py-2 hover:bg-violet-50 rounded transition-colors">
+                <div className="border-l-4 border-emerald-400 pl-4 py-2 hover:bg-emerald-50 rounded transition-colors">
                   <h5 className="font-semibold text-gray-900">C++ Programming</h5>
                   <p className="text-gray-600 text-sm">Udemy</p>
                 </div>
-                <div className="border-l-4 border-violet-400 pl-4 py-2 hover:bg-violet-50 rounded transition-colors">
+                <div className="border-l-4 border-emerald-400 pl-4 py-2 hover:bg-emerald-50 rounded transition-colors">
                   <h5 className="font-semibold text-gray-900">JavaScript Full Course</h5>
                   <p className="text-gray-600 text-sm">Supersimpledev</p>
                 </div>
@@ -161,7 +161,7 @@ export default function AboutSection() {
                 {/* AWS In Progress */}
                 <div className="border-l-4 border-yellow-400 pl-4 py-2 bg-yellow-50 rounded">
                   <h5 className="font-semibold text-gray-900">AWS Solutions Architect Associate - In Progress</h5>
-                  <p className="text-gray-600 text-sm">Exam Scheduled June 7, 2026</p>
+                  <p className="text-gray-600 text-sm">Exam Scheduled June 12, 2026</p>
                 </div>
               </div>
             </div>

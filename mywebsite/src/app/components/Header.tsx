@@ -12,7 +12,7 @@ export default function Header() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
             Carlo Castillo
           </h1>
           <p className="text-sm text-gray-500 font-medium">IT Support Specialist & Full Stack Developer</p>
@@ -20,23 +20,23 @@ export default function Header() {
         
         <nav className="flex items-center space-x-6">
           <div className="hidden md:flex items-center space-x-6 text-sm">
-            <a href="#about" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">About</a>
-            <a href="#projects" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">Projects</a>
-            <a href="#experience" className="text-gray-600 hover:text-violet-600 transition-colors font-medium">Experience</a>
+            <a href="#about" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">About</a>
+            <a href="#projects" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">Projects</a>
+            <a href="#experience" className="text-gray-600 hover:text-emerald-600 transition-colors font-medium">Experience</a>
           </div>
           <div className="flex items-center space-x-3">
             <a href="https://www.linkedin.com/in/carlo-castillo-59827a354/" target="_blank" rel="noopener noreferrer" 
-               className="text-gray-500 hover:text-violet-600 transition-colors p-2 rounded-lg hover:bg-violet-50">
+               className="text-gray-500 hover:text-emerald-600 transition-colors p-2 rounded-lg hover:bg-emerald-50">
               <Linkedin size={20} />
             </a>
             <a href="https://github.com/carloc3005" target="_blank" rel="noopener noreferrer" 
-               className="text-gray-500 hover:text-violet-600 transition-colors p-2 rounded-lg hover:bg-violet-50">
+               className="text-gray-500 hover:text-emerald-600 transition-colors p-2 rounded-lg hover:bg-emerald-50">
               <Github size={20} />
             </a>
             <a
               href="/Carlo-Castillo-Resume-2026.pdf"
               download
-              className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white font-semibold py-2.5 px-4 rounded-lg flex items-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-violet-500/25"
+              className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold py-2.5 px-4 rounded-lg flex items-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-emerald-500/25"
             >
               <Download size={16} />
               <span className="hidden sm:inline">Resume</span>

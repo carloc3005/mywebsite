@@ -36,12 +36,12 @@ export default function ProjectsSection() {
                 <div className="flex-1">
                   <div className="flex items-center space-x-2 mb-2">
                     <h4 className="text-2xl font-bold text-gray-900">{project.name}</h4>
-                    <span className="px-2 py-1 bg-violet-100 text-violet-700 text-xs font-medium rounded-full">
+                    <span className="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">
                       {project.category}
                     </span>
                   </div>
                 </div>
-                <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-violet-600 transition-colors transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-emerald-600 transition-colors transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </div>
               
               <p className="text-gray-600 mb-6 leading-relaxed text-sm">
@@ -51,7 +51,7 @@ export default function ProjectsSection() {
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map(tech => (
-                    <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full hover:bg-violet-100 hover:text-violet-700 transition-colors">
+                    <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full hover:bg-emerald-100 hover:text-emerald-700 transition-colors">
                       {tech}
                     </span>
                   ))}
@@ -62,7 +62,7 @@ export default function ProjectsSection() {
                     href={project.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-violet-600 hover:text-violet-700 font-semibold text-sm transition-colors group"
+                    className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-semibold text-sm transition-colors group"
                   >
                     <span>View Project</span>
                     <ArrowUpRight className="ml-1 w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
@@ -73,7 +73,7 @@ export default function ProjectsSection() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-gray-700 hover:text-violet-600 font-semibold text-sm transition-colors group"
+                      className="inline-flex items-center text-gray-700 hover:text-emerald-600 font-semibold text-sm transition-colors group"
                     >
                       <Github className="w-4 h-4 mr-1" />
                       <span>GitHub</span>
@@ -83,7 +83,7 @@ export default function ProjectsSection() {
               </div>
             </div>
             
-            <div className="h-1 bg-gradient-to-r from-violet-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+            <div className="h-1 bg-gradient-to-r from-emerald-500 to-teal-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </motion.div>
         ))}
       </div>
