@@ -41,7 +41,7 @@ export default function AboutSection() {
                 <p>
                   With my Computer Science degree and AWS Cloud Practitioner certification, I've shifted my focus to cloud 
                   infrastructure while maintaining strong full-stack development skills. I'm preparing for my Solutions Architect 
-                  exam in June, and I'm passionate about designing AWS solutions, building applications end-to-end, and tackling 
+                  exam in July, and I'm passionate about designing AWS solutions, building applications end-to-end, and tackling
                   challenges across the entire technology stack which is front-end and back-end. From infrastructure design to application development and cost optimization, 
                   I'm building comprehensive expertise.
                 </p>
@@ -161,7 +161,7 @@ export default function AboutSection() {
                 {/* AWS In Progress */}
                 <div className="border-l-4 border-yellow-400 pl-4 py-2 bg-yellow-50 rounded">
                   <h5 className="font-semibold text-gray-900">AWS Solutions Architect Associate - In Progress</h5>
-                  <p className="text-gray-600 text-sm">Exam Scheduled June 12, 2026</p>
+                  <p className="text-gray-600 text-sm">Exam Scheduled July 7, 2026</p>
                 </div>
               </div>
             </div>
