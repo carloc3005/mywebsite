@@ -34,9 +34,9 @@ export default function AboutSection() {
               <h4 className="text-2xl font-bold text-gray-900">My Cloud Journey</h4>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  My career began in manufacturing and operations at Applied Medical, followed by high-volume customer service 
-                  at Starbucks and Chipotle. These roles taught me how systems work at scale—precision, reliability, and efficiency 
-                  matter. That foundation shaped how I approach cloud architecture today.
+                  My career began in manufacturing and operations at Applied Medical, followed by high-volume customer service
+                  at Starbucks and Chipotle. Those roles taught me that precision, reliability, and efficiency are what keep any
+                  system running smoothly under pressure, lessons that now shape how I approach cloud architecture.
                 </p>
                 <p>
                   With my Computer Science degree and AWS Certified Solutions Architect – Associate and Cloud Practitioner
@@ -109,7 +109,7 @@ export default function AboutSection() {
                 <div className="bg-white bg-opacity-70 p-4 rounded-xl">
                   <h5 className="text-lg font-semibold text-gray-900">Bachelor in Computer Science</h5>
                   <p className="text-emerald-600 font-medium text-sm mt-1">California State University, Fullerton</p>
-                  <p className="text-gray-500 text-sm">2019-2025</p>
+                  <p className="text-gray-500 text-sm">2022-2025</p>
                 </div>
                 
                 <div className="bg-white bg-opacity-70 p-4 rounded-xl">
