@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { Mail, Linkedin, Github, Download, ArrowUpRight, Phone, MapPin, Code, Briefcase, GraduationCap } from 'lucide-react';
+import { Mail, Linkedin, Github, ArrowUpRight, Phone, MapPin, Code, Briefcase } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AboutSection from './components/AboutSection';
 
@@ -44,7 +44,7 @@ export default function PortfolioPage() {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
               Carlo Castillo
             </h1>
-            <p className="text-sm text-gray-500 font-medium">Cloud Solution Architect and Web Developer</p>
+            <p className="text-sm text-gray-500 font-medium">Cloud Engineer</p>
           </motion.div>
           
           <nav className="flex items-center space-x-6">
@@ -58,17 +58,16 @@ export default function PortfolioPage() {
                  className="text-gray-500 hover:text-emerald-600 transition-colors p-2 rounded-lg hover:bg-emerald-50">
                 <Linkedin size={20} />
               </a>
-              <a href="https://github.com/carloc3005" target="_blank" rel="noopener noreferrer" 
+              <a href="https://github.com/carloc3005" target="_blank" rel="noopener noreferrer"
                  className="text-gray-500 hover:text-emerald-600 transition-colors p-2 rounded-lg hover:bg-emerald-50">
                 <Github size={20} />
               </a>
               <a
-                href="/Gray and Black Proffessional CV Resume-1.pdf"
-                download
+                href="mailto:carlofc95@gmail.com"
                 className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold py-2.5 px-4 rounded-lg flex items-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-emerald-500/25"
               >
-                <Download size={16} />
-                <span className="hidden sm:inline">Resume</span>
+                <Mail size={16} />
+                <span className="hidden sm:inline">Contact</span>
               </a>
             </div>
           </nav>
@@ -97,17 +96,17 @@ export default function PortfolioPage() {
                 </motion.div>
                 
                 <h2 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-                  Cloud Solution Architect
+                  Cloud Engineer
                   <span className="block bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                    and Web Developer
+                    AWS Certified
                   </span>
                 </h2>
-                
+
                 <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
-                  A Computer Science graduate with a passion for building full-stack applications 
-                  and managing the cloud infrastructure they run on. My experience ranges from 
-                  developing applications with Next.js and AI to assembling hardware and deploying 
-                  websites on AWS.
+                  A Computer Science graduate with a passion for designing, deploying, and automating
+                  cloud infrastructure on AWS. My experience ranges from architecting scalable systems
+                  to building the full-stack applications that run on them, with hands-on work spanning
+                  from hardware to the cloud.
                 </p>
               </div>
 
@@ -160,7 +159,7 @@ export default function PortfolioPage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900">Carlo Castillo</h3>
-                      <p className="text-emerald-600 font-medium">Cloud Solution Architect</p>
+                      <p className="text-emerald-600 font-medium">Cloud Engineer</p>
                     </div>
                     <div className="flex justify-center space-x-4 pt-4">
                       <div className="text-center">
@@ -307,20 +306,21 @@ export default function PortfolioPage() {
               Let&apos;s discuss how I can contribute to your team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
+              <a
                 href="mailto:carlofc95@gmail.com"
                 className="bg-white text-emerald-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
               >
                 <Mail size={20} />
                 <span>Get In Touch</span>
               </a>
-              <a 
-                href="/Gray and Black Proffessional CV Resume-1.pdf"
-                download
+              <a
+                href="https://www.linkedin.com/in/carlo-castillo-59827a354/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 font-bold py-4 px-8 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
               >
-                <Download size={20} />
-                <span>Download Resume</span>
+                <Linkedin size={20} />
+                <span>Connect on LinkedIn</span>
               </a>
             </div>
           </div>
@@ -333,7 +333,7 @@ export default function PortfolioPage() {
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="space-y-4">
               <h4 className="text-xl font-bold">Carlo Castillo</h4>
-              <p className="text-gray-400">Cloud Solution Architect and Web Developer</p>
+              <p className="text-gray-400">Cloud Engineer</p>
               <p className="text-gray-400 text-sm">
                 Building digital solutions with clean code and intuitive design.
               </p>

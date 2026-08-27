@@ -19,9 +19,9 @@ export default function AboutSection() {
         <motion.div variants={slideUp} className="space-y-6">
           <h3 className="text-4xl font-bold text-gray-900">About Me</h3>
           <p className="text-xl text-gray-600 leading-relaxed max-w-2xl font-medium">
-            AWS Certified Cloud Practitioner pursuing my Solutions Architect certification with full-stack development expertise. 
-            I design and deploy scalable cloud infrastructure while building applications end-to-end, focused on solutions that are 
-            secure, efficient, and solve real business challenges.
+            AWS Certified Solutions Architect – Associate and Cloud Practitioner with full-stack development expertise.
+            I build and automate cloud infrastructure on AWS while developing applications end-to-end, focused on solutions that are
+            secure, scalable, and solve real business challenges.
           </p>
         </motion.div>
 
@@ -39,17 +39,18 @@ export default function AboutSection() {
                   matter. That foundation shaped how I approach cloud architecture today.
                 </p>
                 <p>
-                  With my Computer Science degree and AWS Cloud Practitioner certification, I've shifted my focus to cloud 
-                  infrastructure while maintaining strong full-stack development skills. I'm preparing for my Solutions Architect 
-                  exam in July, and I'm passionate about designing AWS solutions, building applications end-to-end, and tackling
-                  challenges across the entire technology stack which is front-end and back-end. From infrastructure design to application development and cost optimization, 
-                  I'm building comprehensive expertise.
+                  With my Computer Science degree and AWS Certified Solutions Architect – Associate and Cloud Practitioner
+                  certifications, my focus has shifted to cloud engineering while maintaining strong full-stack development
+                  skills. I am passionate about provisioning and automating AWS infrastructure, building applications end-to-end,
+                  and tackling challenges across the entire technology stack, front-end and back-end. From infrastructure design
+                  to deployment automation and cost optimization, I am building comprehensive cloud engineering expertise.
                 </p>
                 <p>
-                  I'm driven by the challenge of taking complex requirements and architecting elegant cloud solutions. Whether it's 
-                  designing secure networks, optimizing performance, or ensuring cost efficiency, I'm committed to building systems 
-                  that work reliably. I'm looking for opportunities to grow as a cloud architect and contribute meaningfully to building 
-                  the infrastructure that powers modern applications.
+                  I am driven by the challenge of taking complex requirements and turning them into reliable, well-architected
+                  cloud systems. Whether it is provisioning secure networks, automating deployments, or optimizing performance
+                  and cost, I am committed to building infrastructure that just works. I am looking for opportunities to grow as
+                  a cloud engineer and contribute meaningfully to building and operating the infrastructure that powers modern
+                  applications.
                 </p>
               </div>
             </div>
@@ -140,10 +141,28 @@ export default function AboutSection() {
                   <p className="text-gray-600 text-sm">Supersimpledev</p>
                 </div>
                 
+                {/* AWS Solutions Architect Associate - Verified */}
+                <a
+                  href="https://www.credly.com/badges/595b79e8-aa8a-4ebb-852b-82e8934d0908/public_url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block border-l-4 border-green-400 pl-4 py-2 bg-green-50 hover:bg-green-100 rounded transition-colors group"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h5 className="font-semibold text-gray-900 group-hover:text-green-600 transition-colors">
+                        AWS Certified Solutions Architect – Associate ✓
+                      </h5>
+                      <p className="text-gray-600 text-sm">Certified August 2026 • Click to verify</p>
+                    </div>
+                    <ArrowUpRight className="w-4 h-4 text-green-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </div>
+                </a>
+
                 {/* AWS Certified - Verified */}
-                <a 
-                  href="https://www.credly.com/badges/e5b9e874-0858-4ebf-80e9-5ec36176222c/public_url" 
-                  target="_blank" 
+                <a
+                  href="https://www.credly.com/badges/e5b9e874-0858-4ebf-80e9-5ec36176222c/public_url"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="block border-l-4 border-green-400 pl-4 py-2 bg-green-50 hover:bg-green-100 rounded transition-colors group"
                 >
@@ -157,12 +176,6 @@ export default function AboutSection() {
                     <ArrowUpRight className="w-4 h-4 text-green-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </div>
                 </a>
-                
-                {/* AWS In Progress */}
-                <div className="border-l-4 border-yellow-400 pl-4 py-2 bg-yellow-50 rounded">
-                  <h5 className="font-semibold text-gray-900">AWS Solutions Architect Associate - In Progress</h5>
-                  <p className="text-gray-600 text-sm">Exam Scheduled July 31, 2026</p>
-                </div>
               </div>
             </div>
           </motion.div>

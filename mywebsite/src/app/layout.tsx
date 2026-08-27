@@ -6,14 +6,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Carlo Castillo | Cloud Solution Architect | Web Developer",
-  description: "Computer Science graduate and AWS Certified Cloud Practitioner focused on cloud architecture and full-stack web development with modern technologies.",
-  keywords: "Cloud Solution Architect, Web Developer, AWS, Full-Stack Developer, Computer Science, React, Node.js, JavaScript, Python",
+  title: "Carlo Castillo | Cloud Engineer",
+  description: "Computer Science graduate and AWS Certified Solutions Architect – Associate focused on cloud infrastructure, automation, and full-stack development.",
+  keywords: "Cloud Engineer, AWS, Solutions Architect, DevOps, Full-Stack Developer, Computer Science, React, Node.js, JavaScript, Python",
   authors: [{ name: "Carlo Castillo" }],
   creator: "Carlo Castillo",
   openGraph: {
-    title: "Carlo Castillo | Cloud Solution Architect",
-    description: "Computer Science graduate and AWS Certified Cloud Practitioner focused on cloud architecture and full-stack web development.",
+    title: "Carlo Castillo | Cloud Engineer",
+    description: "Computer Science graduate and AWS Certified Solutions Architect – Associate focused on cloud infrastructure and automation.",
     type: "website",
   },
 };
