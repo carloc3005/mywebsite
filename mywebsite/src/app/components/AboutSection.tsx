@@ -176,6 +176,18 @@ export default function AboutSection() {
                     <ArrowUpRight className="w-4 h-4 text-green-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </div>
                 </a>
+
+                {/* HashiCorp Terraform Associate - In Progress */}
+                <div className="border-l-4 border-yellow-400 pl-4 py-2 bg-yellow-50 rounded">
+                  <h5 className="font-semibold text-gray-900">HashiCorp Certified: Terraform Associate</h5>
+                  <p className="text-gray-600 text-sm">Exam Scheduled October 2026</p>
+                </div>
+
+                {/* AWS SysOps Administrator - In Progress */}
+                <div className="border-l-4 border-yellow-400 pl-4 py-2 bg-yellow-50 rounded">
+                  <h5 className="font-semibold text-gray-900">AWS Certified SysOps Administrator – Associate</h5>
+                  <p className="text-gray-600 text-sm">Exam Scheduled December 2026</p>
+                </div>
               </div>
             </div>
           </motion.div>

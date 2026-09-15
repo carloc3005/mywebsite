@@ -208,11 +208,16 @@ export default function PortfolioPage() {
                 <div className="p-8">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
-                      <div className="flex items-center space-x-2 mb-2">
+                      <div className="flex items-center flex-wrap gap-2 mb-2">
                         <h4 className="text-2xl font-bold text-gray-900">{project.name}</h4>
                         <span className="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">
                           {project.category}
                         </span>
+                        {project.status === 'in-progress' && (
+                          <span className="px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
+                            In Progress
+                          </span>
+                        )}
                       </div>
                     </div>
                     <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-emerald-600 transition-colors transform group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -231,15 +236,21 @@ export default function PortfolioPage() {
                       ))}
                     </div>
                     
-                    <a
-                      href={project.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-semibold text-sm transition-colors group"
-                    >
-                      <span>View Project</span>
-                      <ArrowUpRight className="ml-1 w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                    </a>
+                    {project.status === 'in-progress' ? (
+                      <span className="inline-flex items-center text-amber-600 font-semibold text-sm">
+                        Coming Soon
+                      </span>
+                    ) : (
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-semibold text-sm transition-colors group"
+                      >
+                        <span>View Project</span>
+                        <ArrowUpRight className="ml-1 w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                      </a>
+                    )}
                   </div>
                 </div>
                 

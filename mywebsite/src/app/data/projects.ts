@@ -8,6 +8,14 @@ export const projects = [
     category: 'Cloud/DevOps'
   },
   {
+    name: 'CI/CD Pipeline for 2048 Game',
+    description: 'Building an automated CI/CD pipeline on AWS to containerize and deploy the 2048 game, using CodePipeline to orchestrate builds through CodeBuild, push images to Amazon ECR, and deploy to ECS Fargate. Adding automated testing and infrastructure-as-code with Terraform to demonstrate production-style deployment practices.',
+    tech: ['AWS CodePipeline', 'AWS CodeBuild', 'Amazon ECR', 'Amazon ECS', 'Docker', 'Terraform'],
+    href: '',
+    category: 'Cloud/DevOps',
+    status: 'in-progress'
+  },
+  {
     name: 'Spotify',
     description: 'A feature-rich music streaming application built with Next.js where users can build a personal library of their favorite songs. The platform delivers an engaging playback experience with a real-time sound wave visualizer and a high-fidelity interface modeled after Spotify. \n\nTest Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
     tech: ['Next.js', 'TailwindCSS', 'Neon Postgres', 'Node.js', 'Stripe'],
