@@ -9,8 +9,8 @@ export const projects = [
   },
   {
     name: 'CI/CD Pipeline for Checkers Game',
-    description: 'Built an automated CI/CD pipeline on AWS to containerize and deploy a checkers game, using CodePipeline to orchestrate builds through CodeBuild, push images to Amazon ECR, and deploy to ECS Fargate. Included automated testing and infrastructure-as-code with Terraform to demonstrate production-style deployment practices.',
-    tech: ['AWS CodePipeline', 'AWS CodeBuild', 'Amazon ECR', 'Amazon ECS', 'Docker', 'Terraform'],
+    description: 'Deployed a browser checkers game through a fully automated CI/CD pipeline on AWS: a GitHub push triggers CodePipeline, which runs CodeBuild to containerize the app with Docker, pushes the image to Amazon ECR, and rolls it out to Amazon ECS on Fargate with zero manual steps. Configured custom VPC networking, security groups, and least-privilege IAM roles, tearing down all resources after verification for a total AWS spend under $1.',
+    tech: ['AWS CodePipeline', 'AWS CodeBuild', 'Amazon ECR', 'Amazon ECS (Fargate)', 'Docker', 'AWS IAM', 'Amazon VPC'],
     href: 'https://github.com/carloc3005/docker_checker',
     github: 'https://github.com/carloc3005/docker_checker',
     category: 'Cloud/DevOps'
