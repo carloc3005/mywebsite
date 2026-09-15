@@ -213,11 +213,6 @@ export default function PortfolioPage() {
                         <span className="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">
                           {project.category}
                         </span>
-                        {project.status === 'in-progress' && (
-                          <span className="px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
-                            In Progress
-                          </span>
-                        )}
                       </div>
                     </div>
                     <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-emerald-600 transition-colors transform group-hover:translate-x-1 group-hover:-translate-y-1" />

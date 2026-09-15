@@ -9,12 +9,11 @@ export const projects = [
   },
   {
     name: 'CI/CD Pipeline for 2048 Game',
-    description: 'Building an automated CI/CD pipeline on AWS to containerize and deploy the 2048 game, using CodePipeline to orchestrate builds through CodeBuild, push images to Amazon ECR, and deploy to ECS Fargate. Adding automated testing and infrastructure-as-code with Terraform to demonstrate production-style deployment practices.',
+    description: 'Built an automated CI/CD pipeline on AWS to containerize and deploy the 2048 game, using CodePipeline to orchestrate builds through CodeBuild, push images to Amazon ECR, and deploy to ECS Fargate. Included automated testing and infrastructure-as-code with Terraform to demonstrate production-style deployment practices.',
     tech: ['AWS CodePipeline', 'AWS CodeBuild', 'Amazon ECR', 'Amazon ECS', 'Docker', 'Terraform'],
     href: 'https://github.com/carloc3005/docker_checker',
     github: 'https://github.com/carloc3005/docker_checker',
-    category: 'Cloud/DevOps',
-    status: 'in-progress'
+    category: 'Cloud/DevOps'
   },
   {
     name: 'Spotify',
