@@ -8,8 +8,8 @@ export const projects = [
     category: 'Cloud/DevOps'
   },
   {
-    name: 'CI/CD Pipeline for 2048 Game',
-    description: 'Built an automated CI/CD pipeline on AWS to containerize and deploy the 2048 game, using CodePipeline to orchestrate builds through CodeBuild, push images to Amazon ECR, and deploy to ECS Fargate. Included automated testing and infrastructure-as-code with Terraform to demonstrate production-style deployment practices.',
+    name: 'CI/CD Pipeline for Checkers Game',
+    description: 'Built an automated CI/CD pipeline on AWS to containerize and deploy a checkers game, using CodePipeline to orchestrate builds through CodeBuild, push images to Amazon ECR, and deploy to ECS Fargate. Included automated testing and infrastructure-as-code with Terraform to demonstrate production-style deployment practices.',
     tech: ['AWS CodePipeline', 'AWS CodeBuild', 'Amazon ECR', 'Amazon ECS', 'Docker', 'Terraform'],
     href: 'https://github.com/carloc3005/docker_checker',
     github: 'https://github.com/carloc3005/docker_checker',
