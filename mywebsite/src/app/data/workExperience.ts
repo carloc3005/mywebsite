@@ -3,18 +3,18 @@ export const workExperience = [
     company: 'Starbucks',
     role: 'Barista',
     period: 'August 2025 - Current',
-    description: 'Engagement in a team-wide meeting for a proactive approach to learning and a strong willingness to contribute, quickly becoming a valuable member of the store.'
+    description: 'Named Partner of the Quarter within first year of employment for exceptional performance in a high-volume, fast-paced environment.'
   },
   {
     company: 'Chipotle Mexican Grill',
     role: 'Crew Member',
     period: 'November 2023 - August 2025',
-    description: 'Proven ability to excel in a high-pressure setting managing a continuous flow of customer orders while upholding strict standards for speed, quality, and service.'
+    description: 'Managed a continuous flow of customer orders with speed and accuracy, upholding food quality and safety standards in a high-volume, fast-paced environment.'
   },
   {
     company: 'Applied Medical',
     role: 'Production Associate',
     period: 'September 2017 - August 2023',
-    description: 'A results-driven team lead in their ability to organize and distribute processes, delegating tasks and ensuring operational efficiency.'
+    description: 'Trained new hires and delegated tasks, maintaining workflow efficiency over a 6-year tenure.'
   }
 ];
