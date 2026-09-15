@@ -236,11 +236,7 @@ export default function PortfolioPage() {
                       ))}
                     </div>
                     
-                    {project.status === 'in-progress' ? (
-                      <span className="inline-flex items-center text-amber-600 font-semibold text-sm">
-                        Coming Soon
-                      </span>
-                    ) : (
+                    {project.href ? (
                       <a
                         href={project.href}
                         target="_blank"
@@ -250,6 +246,10 @@ export default function PortfolioPage() {
                         <span>View Project</span>
                         <ArrowUpRight className="ml-1 w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                       </a>
+                    ) : (
+                      <span className="inline-flex items-center text-amber-600 font-semibold text-sm">
+                        Coming Soon
+                      </span>
                     )}
                   </div>
                 </div>
