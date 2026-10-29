@@ -28,9 +28,10 @@ export default function AboutSection() {
         <motion.div variants={slideUp} className="space-y-6">
           <h2 className="text-4xl font-bold text-gray-900">About Me</h2>
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl font-medium">
-            I&apos;m an Associate Cloud Engineer with a B.S. in Computer Science and AWS Solutions Architect –
-            Associate and Cloud Practitioner certifications. I build and automate infrastructure on AWS and
-            Azure with Terraform and CI/CD, designing for high availability, security, and low cost.
+            Associate Cloud Engineer with a Bachelor of Science in Computer Science and the AWS Certified
+            Solutions Architect – Associate and Cloud Practitioner certifications. I design and automate cloud
+            infrastructure on AWS and Azure using Terraform and CI/CD, with an emphasis on high availability,
+            security, and cost efficiency.
           </p>
         </motion.div>
 
@@ -39,14 +40,16 @@ export default function AboutSection() {
           <motion.div variants={slideUp} className="lg:col-span-2 space-y-10">
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                I started out in operations: six years as a production associate at Applied Medical, then
-                high-volume customer-facing work at Chipotle and Starbucks. Those jobs taught me to stay accurate
-                and reliable under pressure, the same habits I bring to building and running infrastructure.
+                My professional background began in operations, including six years as a Production Associate at
+                Applied Medical, followed by high-volume, customer-facing roles at Chipotle Mexican Grill and
+                Starbucks. These positions developed my commitment to accuracy, reliability, and performance under
+                pressure, qualities I apply to building and operating cloud infrastructure.
               </p>
               <p>
-                I also build full-stack apps with Next.js and Node.js, which helps me understand what the
-                infrastructure is actually serving. I&apos;m looking for an entry-level Associate Cloud Engineer or
-                Cloud Support role where I can keep growing on real systems.
+                In addition to infrastructure work, I develop full-stack applications with Next.js and Node.js,
+                which gives me a practical understanding of the workloads that the infrastructure supports. I am
+                seeking an entry-level Associate Cloud Engineer or Cloud Support position in which I can continue
+                to develop my expertise on real-world systems.
               </p>
             </div>
 
