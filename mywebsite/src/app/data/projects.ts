@@ -1,83 +1,147 @@
-export const projects = [
+export type ProjectLink = {
+  label: string;
+  href: string;
+};
+
+type BaseProject = {
+  name: string;
+  category: string;
+  tech: string[];
+  links: ProjectLink[];
+  note?: string;
+};
+
+export type Project = BaseProject & {
+  description: string;
+  demoLogin?: { username: string; password: string };
+};
+
+export type FeaturedProject = BaseProject & {
+  tagline: string;
+  architecture: string[];
+  highlights: string[];
+};
+
+// Featured projects mirror the Projects section of the resume.
+export const featuredProjects: FeaturedProject[] = [
+  {
+    name: 'Multi-Cloud Weather Tracker',
+    category: 'Cloud/DevOps',
+    tagline: 'Active-passive disaster recovery across AWS and Azure with automated DNS failover.',
+    architecture: [
+      'Primary:  Route 53 → CloudFront → S3 (AWS)',
+      'Failover: Route 53 → Front Door → Blob Storage (Azure)',
+    ],
+    highlights: [
+      'Architected an active-passive multi-cloud disaster-recovery design across AWS (S3, CloudFront) and Azure (Blob Storage, Front Door), codifying the S3, ACM, Route 53, and Azure Storage layers in Terraform.',
+      'Implemented Route 53 failover routing with HTTPS health checks on both clouds (30-second interval, 3-failure threshold), shifting traffic to Azure automatically for a ~2-minute RTO and 99.9% uptime.',
+      'Enforced HTTPS with ACM and Azure Front Door managed certificates while holding run cost under $2/month.',
+    ],
+    tech: ['Terraform', 'AWS S3', 'AWS CloudFront', 'AWS Route 53', 'AWS ACM', 'Azure Blob Storage', 'Azure Front Door', 'JavaScript'],
+    links: [{ label: 'GitHub', href: 'https://github.com/carloc3005/multi-cloud-weather-tracker' }],
+    note: 'The live demo is offline to avoid hosting costs. The repo has the Terraform config, architecture, and screenshots of the working deployment.',
+  },
+  {
+    name: 'Real-Time Stock Market Analytics Pipeline',
+    category: 'Cloud/DevOps',
+    tagline: 'Serverless, event-driven pipeline that ingests live market data and flags anomalies.',
+    architecture: [
+      'Ingest: Python producer → Kinesis → Lambda → DynamoDB · S3 · SNS',
+      'Query:  S3 → Glue crawler → Athena (SQL)',
+    ],
+    highlights: [
+      'Engineered a serverless, event-driven pipeline (Kinesis Data Streams, Lambda) that ingests live market data every 30 seconds and processes it with sub-second latency, computing price change and flagging moves over 5% as anomalies.',
+      'Implemented a two-tier storage design: DynamoDB (on-demand, symbol/timestamp keys) for low-latency queries and an S3 data lake of raw JSON, queryable with SQL through a Glue crawler and Athena.',
+      'Fixed a DynamoDB float/Decimal type mismatch with a Lambda transformation layer; isolated per-record failures.',
+    ],
+    tech: ['Python', 'AWS Kinesis', 'AWS Lambda', 'AWS DynamoDB', 'AWS S3', 'AWS Glue', 'AWS Athena', 'AWS SNS'],
+    links: [{ label: 'GitHub', href: 'https://github.com/carloc3005/aws-stock-analytics' }],
+  },
+  {
+    name: 'Checkers Web App CI/CD Pipeline',
+    category: 'Cloud/DevOps',
+    tagline: 'Every push to main is built, containerized, and rolled out with no manual steps.',
+    architecture: [
+      'Pipeline: GitHub → CodePipeline → CodeBuild → ECR → ECS Fargate',
+      'Network:  Custom VPC · 2 public subnets across 2 AZs · Internet Gateway',
+    ],
+    highlights: [
+      'Built a GitHub-triggered CI/CD pipeline (CodePipeline, CodeBuild, ECR, ECS Fargate) that builds a containerized Nginx app, pushes the image to ECR, and rolls out the new task on every push to main with no manual steps.',
+      'Secured the pipeline with a CodeBuild service role and a custom IAM policy scoped to a single ECS service, and deployed Fargate tasks into a custom VPC (2 public subnets across 2 Availability Zones, Internet Gateway, HTTP-only security group).',
+      'Diagnosed a Fargate CannotPullContainerError (arm64 vs. amd64 image) and a misplaced outbound security group rule.',
+    ],
+    tech: ['Docker', 'AWS CodePipeline', 'AWS CodeBuild', 'AWS ECR', 'AWS ECS Fargate', 'AWS IAM', 'AWS VPC', 'GitHub'],
+    links: [{ label: 'GitHub', href: 'https://github.com/carloc3005/docker_checker' }],
+    note: 'Resources were torn down after verification; total AWS spend was under $1.',
+  },
+];
+
+export const moreProjects: Project[] = [
   {
     name: '3-Tier WordPress on AWS',
-    description: 'Architected and deployed a highly available, secure 3-Tier WordPress website on AWS utilizing a custom VPC with isolated public/private subnets, an Application Load Balancer, EC2 auto-scaling, Amazon RDS (MySQL), and Amazon EFS for shared storage.',
-    tech: ['AWS VPC', 'AWS EC2', 'AWS RDS', 'AWS ALB', 'Amazon EFS'],
-    href: 'https://github.com/carloc3005/3-tier-wordpress-website',
-    github: 'https://github.com/carloc3005/3-tier-wordpress-website',
-    category: 'Cloud/DevOps'
-  },
-  {
-    name: 'CI/CD Pipeline for Checkers Game',
-    description: 'Deployed a browser checkers game through a fully automated CI/CD pipeline on AWS: a GitHub push triggers CodePipeline, which runs CodeBuild to containerize the app with Docker, pushes the image to Amazon ECR, and rolls it out to Amazon ECS on Fargate with zero manual steps. Configured custom VPC networking, security groups, and least-privilege IAM roles, tearing down all resources after verification for a total AWS spend under $1.',
-    tech: ['AWS CodePipeline', 'AWS CodeBuild', 'Amazon ECR', 'Amazon ECS (Fargate)', 'Docker', 'AWS IAM', 'Amazon VPC'],
-    href: 'https://github.com/carloc3005/docker_checker',
-    github: 'https://github.com/carloc3005/docker_checker',
-    category: 'Cloud/DevOps'
-  },
-  {
-    name: 'Spotify',
-    description: 'A feature-rich music streaming application built with Next.js where users can build a personal library of their favorite songs. The platform delivers an engaging playback experience with a real-time sound wave visualizer and a high-fidelity interface modeled after Spotify. \n\nTest Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
-    tech: ['Next.js', 'TailwindCSS', 'Neon Postgres', 'Node.js', 'Stripe'],
-    href: 'https://spotify-iota-amber.vercel.app/',
-    category: 'Full-Stack'
-  },
-  {
-    name: 'KnifeX',
-    description: 'Developed a CS:GO skin-trading platform where users can browse, list, and securely trade virtual knife skins. Delivered a responsive interface and robust REST-style APIs for real-time user flow and trade execution while overcoming state management and plugin-handling challenges. \n\nTest Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
-    tech: ['React', 'Node.js', 'Express', 'Neon Postgres'],
-    href: 'https://knifex.netlify.app/',
-    category: 'Full-Stack'
-  },
-  {
-    name: 'Hello Po',
-    description: 'An AI-enhanced video conferencing platform with its core video and chat software powered by GetStream.io. The application connects users in a real-time call with OpenAI\'s generative AI for a live conversation. Upon completion, an Inngrest-managed pipeline automatically generates a concise summary of the discussion. \n\nTest Credentials:\nUsername: carlotest@gmail.com\nPassword: lol123321',
-    tech: ['Next.js', 'TailwindCSS', 'Inngest', 'Javascript', 'Neon Postgres', 'GetStream.io'],
-    href: 'https://hello-isc1smnye-carlo-castillos-projects-1517593b.vercel.app',
-    category: 'AI/Video'
-  },
-  {
-    name: 'AWS Route 53',
-    description: 'Developed and deployed my personal portfolio using AWS Route 53 to register a custom domain and configure its DNS records. The static site is hosted on AWS S3 servers, globally distributed via a CloudFront content delivery network with HTTPS enabled through an SSL certificate from AWS Certificate Manager to enhance HTTPS performance.',
-    tech: ['Next.js', 'TailwindCSS', 'AWS Route 53', 'AWS S3', 'AWS CloudFront'],
-    href: 'https://www.carlofc.com',
-    category: 'Cloud/DevOps'
-  },
-  {
-    name: 'Netflix Data Visualization',
-    description: 'Created interactive data visualizations using AWS QuickSight to analyze Netflix content trends. Imported a Netflix CSV dataset and built multiple insightful graphs and dashboards to visualize patterns in content distribution, ratings, genres, and release trends. This beginner-level project demonstrates proficiency in AWS cloud services and data visualization techniques.',
-    tech: ['AWS QuickSight', 'Data Visualization', 'CSV Data Analysis', 'AWS S3'],
-    href: 'https://www.canva.com/design/DAG3TsKihNM/7hTnwhnqbzFiOrqq0rRqUQ/edit',
-    category: 'Cloud/DevOps'
+    category: 'Cloud/DevOps',
+    description:
+      'WordPress on a classic 3-tier AWS architecture: custom VPC with public and private subnets, an Application Load Balancer, EC2 instances in private subnets (bastion host and NAT gateways), RDS MySQL, and EFS shared storage, locked down with chained security groups.',
+    tech: ['AWS VPC', 'AWS EC2', 'AWS ALB', 'AWS RDS', 'Amazon EFS', 'NAT Gateway'],
+    links: [{ label: 'GitHub', href: 'https://github.com/carloc3005/3-tier-wordpress-website' }],
   },
   {
     name: 'AWS IAM Security & Access Management',
-    description: 'Implemented AWS Identity and Access Management (IAM) best practices by provisioning an EC2 instance and designing custom security policies using JSON. Created IAM users with specific permissions and tested the policy enforcement to ensure proper access control. This project demonstrates hands-on experience with AWS security fundamentals, least privilege principles, and policy-based access management for cloud resources.',
-    tech: ['AWS IAM', 'AWS EC2', 'JSON Policy', 'Access Control', 'Cloud Security'],
-    href: 'https://www.canva.com/design/DAG3_H68-3Y/rZGDfMm4ejLV7d0P4Xxtmw/edit',
-    category: 'Cloud/DevOps'
+    category: 'Cloud/DevOps',
+    description:
+      'Provisioned an EC2 instance and wrote custom JSON IAM policies, then created IAM users with specific permissions and tested that least-privilege access was enforced.',
+    tech: ['AWS IAM', 'AWS EC2', 'JSON Policy', 'Least Privilege'],
+    links: [{ label: 'Write-up', href: 'https://www.canva.com/design/DAG3_H68-3Y/rZGDfMm4ejLV7d0P4Xxtmw/edit' }],
   },
   {
-    name: 'Multi-City Weather Tracker',
-    description: 'Built a serverless weather tracking application using AWS Lambda and API Gateway to fetch real-time weather data for multiple cities. The application leverages DynamoDB for storing user preferences and historical weather data, while CloudWatch monitors system performance and logs. Integrated with OpenWeatherMap API to provide accurate temperature, humidity, and forecast information across different geographical locations.',
-    tech: ['AWS Lambda', 'AWS API Gateway', 'AWS DynamoDB', 'AWS CloudWatch', 'Python', 'OpenWeatherMap API'],
-    href: 'https://github.com/carloc3005/multi-cloud-weather-tracker',
-    github: 'https://github.com/carloc3005/multi-cloud-weather-tracker',
-    category: 'Cloud/DevOps'
+    name: 'Netflix Data Visualization',
+    category: 'Cloud/DevOps',
+    description:
+      'Loaded a Netflix CSV dataset from S3 into AWS QuickSight and built dashboards showing content distribution, ratings, genres, and release trends.',
+    tech: ['AWS QuickSight', 'AWS S3', 'Data Visualization'],
+    links: [{ label: 'Write-up', href: 'https://www.canva.com/design/DAG3TsKihNM/7hTnwhnqbzFiOrqq0rRqUQ/edit' }],
   },
   {
-    name: 'AWS Stock Analysis Dashboard',
-    description: 'Developed a cloud-based stock analysis platform using AWS services to process and visualize real-time market data. Utilized AWS Lambda for data processing, S3 for storing historical stock data, and QuickSight for creating interactive dashboards displaying stock trends, moving averages, and market indicators. Implemented automated data pipelines using EventBridge to schedule daily market data updates and analysis reports.',
-    tech: ['AWS Lambda', 'AWS S3', 'AWS QuickSight', 'AWS EventBridge', 'Python', 'Financial APIs'],
-    href: 'https://github.com/carloc3005/aws-stock-analytics',
-    github: 'https://github.com/carloc3005/aws-stock-analytics',
-    category: 'Cloud/DevOps'
+    name: 'Portfolio Site & Custom Domain',
+    category: 'Cloud/DevOps',
+    description:
+      'This site: a Next.js and Tailwind portfolio deployed on Vercel, served from carlofc.com with the domain\'s DNS managed in an AWS Route 53 hosted zone.',
+    tech: ['Next.js', 'Tailwind CSS', 'Vercel', 'AWS Route 53'],
+    links: [{ label: 'GitHub', href: 'https://github.com/carloc3005/mywebsite' }],
+  },
+  {
+    name: 'KnifeX',
+    category: 'Full-Stack',
+    description:
+      'CS2 knife-skin trading platform where users browse, list, and trade virtual skins, with a responsive UI and REST-style APIs for the trade flow.',
+    tech: ['React', 'Node.js', 'Express', 'Neon Postgres'],
+    links: [{ label: 'Live demo', href: 'https://knifex.netlify.app/' }],
+    demoLogin: { username: 'carlotest@gmail.com', password: 'lol123321' },
+  },
+  {
+    name: 'Spotify Clone',
+    category: 'Full-Stack',
+    description:
+      'Music streaming app where users build a personal library of songs, with a real-time sound-wave visualizer and an interface modeled after Spotify.',
+    tech: ['Next.js', 'Tailwind CSS', 'Neon Postgres', 'Node.js', 'Stripe'],
+    links: [{ label: 'Live demo', href: 'https://spotify-iota-amber.vercel.app/' }],
+    demoLogin: { username: 'carlotest@gmail.com', password: 'lol123321' },
+  },
+  {
+    name: 'Hello Po',
+    category: 'Full-Stack/AI',
+    description:
+      'AI-enhanced video calling: real-time calls and chat on GetStream.io with a live OpenAI conversation, then an Inngest pipeline generates a summary of the discussion.',
+    tech: ['Next.js', 'Tailwind CSS', 'Inngest', 'GetStream.io', 'Neon Postgres'],
+    links: [],
+    note: 'Demo temporarily unavailable.',
   },
   {
     name: 'Custom PC & System Configuration',
-    description: 'Built and configured custom gaming and workstation PCs from the ground up, including component selection, assembly, BIOS configuration, and operating system installation. Specialized in performance optimization, thermal management, and system troubleshooting. Projects include high-performance gaming rigs, development workstations, and budget-friendly builds tailored to specific user requirements. \n\nGallery coming soon - Pictures will be added to showcase completed builds and configurations.',
-    tech: ['PC Hardware Assembly', 'Windows/Linux Installation', 'BIOS Configuration', 'System Optimization', 'Troubleshooting'],
-    href: 'https://docs.google.com/document/d/13zbWH6eNL_1RS9pi--bo2DGuau4_rFT_fFn1gnzbqRo/edit?tab=t.0',
-    category: 'Hardware/IT'
+    category: 'Hardware/IT',
+    description:
+      'Built and configured custom gaming and workstation PCs: component selection, assembly, BIOS configuration, OS installation, thermal management, and troubleshooting.',
+    tech: ['PC Hardware', 'Windows/Linux', 'BIOS Configuration', 'Troubleshooting'],
+    links: [{ label: 'Build guide', href: 'https://docs.google.com/document/d/13zbWH6eNL_1RS9pi--bo2DGuau4_rFT_fFn1gnzbqRo/edit?tab=t.0' }],
   },
 ];

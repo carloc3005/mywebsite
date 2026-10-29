@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
 import { staggerChildren, slideUp } from '../data/animations';
 import { workExperience } from '../data/workExperience';
 
@@ -15,33 +14,22 @@ export default function ExperienceSection() {
       viewport={{ once: true, amount: 0.1 }}
       variants={staggerChildren}
     >
-      <motion.div variants={slideUp} className="text-center mb-16">
-        <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Work Experience</h3>
+      <motion.div variants={slideUp} className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Work Experience</h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Professional experience that has shaped my work ethic and team collaboration skills.
+          Operations and customer-facing roles that built the reliability and teamwork I bring to engineering.
         </p>
       </motion.div>
 
-      <div className="max-w-4xl mx-auto space-y-8">
+      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg border border-gray-100 divide-y divide-gray-100">
         {workExperience.map((job) => (
-          <motion.div
-            key={job.company}
-            variants={slideUp}
-            className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
-          >
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-              <div className="flex items-center space-x-4 mb-4 md:mb-0">
-                <div className="p-3 bg-emerald-100 rounded-lg">
-                  <Briefcase className="w-6 h-6 text-emerald-600" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900">{job.role}</h4>
-                  <p className="text-lg text-emerald-600 font-semibold">{job.company}</p>
-                </div>
-              </div>
-              <span className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                {job.period}
-              </span>
+          <motion.div key={job.company} variants={slideUp} className="p-6 md:p-8">
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+              <h3 className="text-lg text-gray-900">
+                <span className="font-bold">{job.role}</span>
+                <span className="text-gray-600">, {job.company}</span>
+              </h3>
+              <span className="text-sm font-medium text-gray-500 whitespace-nowrap">{job.period}</span>
             </div>
             <p className="text-gray-600 leading-relaxed">{job.description}</p>
           </motion.div>

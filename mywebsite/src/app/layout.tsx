@@ -6,15 +6,17 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Carlo Castillo | Cloud Engineer",
-  description: "Computer Science graduate and AWS Certified Solutions Architect – Associate focused on cloud infrastructure, automation, and full-stack development.",
-  keywords: "Cloud Engineer, AWS, Solutions Architect, DevOps, Full-Stack Developer, Computer Science, React, Node.js, JavaScript, Python",
+  metadataBase: new URL("https://www.carlofc.com"),
+  title: "Carlo Castillo | Associate Cloud Engineer",
+  description: "Associate Cloud Engineer and AWS Certified Solutions Architect – Associate. Builds highly available AWS and Azure environments with Terraform, including a multi-cloud failover system with 99.9% uptime.",
+  keywords: "Associate Cloud Engineer, Cloud Support, AWS, Azure, Terraform, Docker, CI/CD, AWS Solutions Architect, Python, Computer Science",
   authors: [{ name: "Carlo Castillo" }],
   creator: "Carlo Castillo",
   openGraph: {
-    title: "Carlo Castillo | Cloud Engineer",
-    description: "Computer Science graduate and AWS Certified Solutions Architect – Associate focused on cloud infrastructure and automation.",
+    title: "Carlo Castillo | Associate Cloud Engineer",
+    description: "AWS Certified Solutions Architect – Associate. Builds highly available AWS and Azure environments with Terraform and CI/CD.",
     type: "website",
+    url: "/",
   },
 };
 
